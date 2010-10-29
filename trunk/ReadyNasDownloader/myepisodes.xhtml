@@ -1,0 +1,646 @@
+<?xml version="1.0" standalone="yes"?>
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>MyEpisodes.com: SeriesWatch</title></head><body>
+<table align="center"><tr><td colspan="1" rowspan="1" width="50%" style="vertical-align: top;">
+</td><td colspan="1" rowspan="1" width="760px" style="vertical-align: top;">
+<div id="divContainer">
+<div id="divAboveMenu">
+    <div id="tag">
+        <a shape="rect" href="login.php">Change Login</a> /
+        <a shape="rect" href="/login.php?action=Logout"><strong>kyze</strong> (Logout)</a> <br clear="none"></br>
+        <br clear="none"></br>
+    </div>
+    <div style="clear: right; float: right; margin-top: 5px; margin-right: 3px;">
+    </div>
+    <a shape="rect" href="/frontpage.php"><img src="/img/myepisodes_logo.jpg" alt="logo" border="0"></img></a>
+</div>
+<div id="divMenu">
+    <ul id="navlist"><li class="mmli">
+            <a shape="rect" href="/frontpage.php"><img border="0" src="/img/menu_top_home.jpg"></img></a>
+        </li><li class="mmli" onclick="javascript:MenuText('myshows');">
+            <img border="0" src="/img/menu_top_myshows.jpg"></img>
+        </li><li class="mmli" onclick="javascript:MenuText('profile');">
+            <img border="0" src="/img/menu_top_profile.jpg"></img>
+        </li><li class="mmli" onclick="javascript:MenuText('system');">
+            <img border="0" src="/img/menu_top_system.jpg"></img>
+        </li><li class="mmli">
+            <a shape="rect" href="/forum/"><img border="0" src="/img/menu_top_forum.jpg"></img></a>
+        </li><li class="mmli">
+            <a shape="rect" href="/donate.php"><img border="0" src="/img/menu_top_donate.jpg"></img></a>
+        </li></ul>
+</div>
+<div id="menuText">
+</div>
+<script language="javascript">
+    MenuText('myshows');
+</script>
+<br clear="none"></br>
+<img src="img/header_series_watch.jpg"></img><br clear="none"></br><br clear="none"></br>
+
+<form enctype="application/x-www-form-urlencoded" method="POST">
+    <table style="border: 1px black solid;" cellspacing="0" cellpadding="6"><tr align="center" class="header"><td colspan="1" rowspan="1" style="border-bottom: solid 1px black;">
+                Acquire
+            </td><td colspan="1" rowspan="1" style="border-bottom: solid 1px black;">
+                Watch
+            </td><td colspan="1" rowspan="1" style="border-bottom: solid 1px black;">
+                Coming
+            </td><td colspan="1" rowspan="1" style="border-bottom: solid 1px black;">
+                N/A
+            </td><td colspan="1" rowspan="1" style="border-bottom: solid 1px black;">
+                Ignored
+            </td><td colspan="1" rowspan="1" style="border-bottom: solid 1px black;">
+                Show Selected
+            </td></tr><tr align="center"><td colspan="1" rowspan="1">
+                <input checked="checked" type="checkbox" name="status_filter[]" value="1"></input>
+            </td><td colspan="1" rowspan="1">
+                <input checked="checked" type="checkbox" name="status_filter[]" value="2"></input>
+            </td><td colspan="1" rowspan="1">
+                <input checked="checked" type="checkbox" name="status_filter[]" value="4"></input>
+            </td><td colspan="1" rowspan="1">
+                <input checked="checked" type="checkbox" name="status_filter[]" value="8"></input>
+            </td><td colspan="1" rowspan="1">
+                <input type="checkbox" name="status_filter[]" value="16"></input>
+            </td><td colspan="1" rowspan="1">
+                <input type="submit" name="action" value="Filter"></input>
+            </td></tr></table>
+</form>
+<br clear="none"></br>
+
+<table align="center" style="border: solid 1px black;" cellpadding="7" cellspacing="0" width="100%"><tr align="center" class="header"><td colspan="1" rowspan="1" style="border-bottom: solid 1px black;">
+        /
+    </td><td colspan="1" rowspan="1" style="border-bottom: solid 1px black;">
+        Series Name
+    </td><td colspan="1" rowspan="1" style="border-bottom: solid 1px black;">
+        Last Watched
+    </td><td colspan="1" rowspan="1" style="border-bottom: solid 1px black;">
+        Todo
+    </td><td colspan="1" rowspan="1" style="border-bottom: solid 1px black;">
+        Relevant Episode
+    </td><td colspan="1" rowspan="1" style="border-bottom: solid 1px black;">
+        Operations
+    </td></tr><tr align="center" style="background-color: "><td colspan="1" rowspan="1">
+        <a shape="rect" href="myshows.php?action=expand&amp;showid=86&amp;status=0"><img border="0" src="img/icon_plus.gif" style="cursor: pointer;"></img></a>
+    </td><td colspan="1" rowspan="1">
+        <a shape="rect" class="shows" href="http://www.tvrage.com/Greys_Anatomy" target="_blank">Grey's Anatomy</a>
+    </td><td colspan="1" rowspan="1">
+        <b>
+            S06E17 </b>
+    </td><td colspan="1" rowspan="1">
+        <img src="img/icon_acquire.gif"></img></td><td colspan="1" rowspan="1">
+        <b>S07E06 - 28-Oct-2010</b><br clear="none"></br><a shape="rect" href="http://www.tvrage.com/Greys_Anatomy/episodes/1064984395/07x06" target="_blank"> These Arms of Mine</a>
+    </td><td colspan="1" rowspan="1">
+        <a shape="rect" href="myshows.php?action=Update&amp;showid=86&amp;season=7&amp;episode=6&amp;seen=0" style="font-size: xx-small;">ACQUIRED</a> / <a shape="rect" href="myshows.php?action=Update&amp;showid=86&amp;season=7&amp;episode=6&amp;seen=1" style="font-size: xx-small;">SEEN</a><br clear="none"></br> <a shape="rect" href="JavaScript:GotoConfirm('Are you sure you want to delete: Grey\'s Anatomy?\n\nAll your episode-records for this show will be lost.','myshows.php?action=Remove&amp;showid=86')" style="font-size: xx-small;">REMOVE</a><br clear="none"></br>
+        <a shape="rect" href="myshows.php?action=Ignore&amp;Ignore=1&amp;showid=86" style="font-size: xx-small;">Ignore</a> - <a shape="rect" href="myshows.php?action=Split&amp;Split=1&amp;showid=86" style="font-size: xx-small;">Disallow Split</a> <a shape="rect" href="forum/viewtopic.php?t=66">[?]</a><br clear="none"></br>
+    </td></tr><tr align="center" style="background-color: "><td colspan="1" rowspan="1">
+        <a shape="rect" href="myshows.php?action=expand&amp;showid=6668&amp;status=0"><img border="0" src="img/icon_plus.gif" style="cursor: pointer;"></img></a>
+    </td><td colspan="1" rowspan="1">
+        <a shape="rect" class="shows" href="http://www.tvrage.com/shows/id-25704" target="_blank">Outsourced</a>
+    </td><td colspan="1" rowspan="1">
+        <b>
+            S01E05 </b>
+    </td><td colspan="1" rowspan="1">
+        <img src="img/icon_acquire.gif"></img></td><td colspan="1" rowspan="1">
+        <b>S01E06 - 28-Oct-2010</b><br clear="none"></br><a shape="rect" href="http://www.tvrage.com/Outsourced/episodes/1064987417/01x06" target="_blank"> Bolloween</a>
+    </td><td colspan="1" rowspan="1">
+        <a shape="rect" href="myshows.php?action=Update&amp;showid=6668&amp;season=1&amp;episode=6&amp;seen=0" style="font-size: xx-small;">ACQUIRED</a> / <a shape="rect" href="myshows.php?action=Update&amp;showid=6668&amp;season=1&amp;episode=6&amp;seen=1" style="font-size: xx-small;">SEEN</a><br clear="none"></br>
+        <a shape="rect" href="JavaScript:GotoConfirm('Are you sure you want to delete: Outsourced?\n\nAll your episode-records for this show will be lost.','myshows.php?action=Remove&amp;showid=6668')" style="font-size: xx-small;">REMOVE</a><br clear="none"></br>
+        <a shape="rect" href="myshows.php?action=Ignore&amp;Ignore=1&amp;showid=6668" style="font-size: xx-small;">Ignore</a> - <a shape="rect" href="myshows.php?action=Split&amp;Split=1&amp;showid=6668" style="font-size: xx-small;">Disallow Split</a> <a shape="rect" href="forum/viewtopic.php?t=66">[?]</a><br clear="none"></br>
+    </td></tr><tr align="center" style="background-color: "><td colspan="1" rowspan="1">
+        <a shape="rect" href="myshows.php?action=expand&amp;showid=2219&amp;status=0"><img border="0" src="img/icon_plus.gif" style="cursor: pointer;"></img></a>
+    </td><td colspan="1" rowspan="1">
+        <a shape="rect" class="shows" href="http://www.tvrage.com/Private_Practice" target="_blank">Private Practice</a>
+    </td><td colspan="1" rowspan="1">
+        <b>
+            S03E14 </b>
+    </td><td colspan="1" rowspan="1">
+        <img src="img/icon_acquire.gif"></img></td><td colspan="1" rowspan="1">
+        <b>S04E06 - 28-Oct-2010</b><br clear="none"></br><a shape="rect" href="http://www.tvrage.com/Private_Practice/episodes/1064985567/04x06" target="_blank"> All In The Family</a>
+    </td><td colspan="1" rowspan="1">
+        <a shape="rect" href="myshows.php?action=Update&amp;showid=2219&amp;season=4&amp;episode=6&amp;seen=0" style="font-size: xx-small;">ACQUIRED</a> / <a shape="rect" href="myshows.php?action=Update&amp;showid=2219&amp;season=4&amp;episode=6&amp;seen=1" style="font-size: xx-small;">SEEN</a><br clear="none"></br>
+        <a shape="rect" href="JavaScript:GotoConfirm('Are you sure you want to delete: Private Practice?\n\nAll your episode-records for this show will be lost.','myshows.php?action=Remove&amp;showid=2219')" style="font-size: xx-small;">REMOVE</a><br clear="none"></br>
+        <a shape="rect" href="myshows.php?action=Ignore&amp;Ignore=1&amp;showid=2219" style="font-size: xx-small;">Ignore</a> - <a shape="rect" href="myshows.php?action=Split&amp;Split=1&amp;showid=2219" style="font-size: xx-small;">Disallow Split</a> <a shape="rect" href="forum/viewtopic.php?t=66">[?]</a><br clear="none"></br>
+    </td></tr><tr align="center" style="background-color: "><td colspan="1" rowspan="1">
+        <a shape="rect" href="myshows.php?action=expand&amp;showid=1115&amp;status=0"><img border="0" src="img/icon_plus.gif" style="cursor: pointer;"></img></a>
+    </td><td colspan="1" rowspan="1">
+        <a shape="rect" class="shows" href="http://www.tvrage.com/The_Big_Bang_Theory" target="_blank">The Big Bang Theory</a>
+    </td><td colspan="1" rowspan="1">
+        <b>
+            S04E05 </b>
+    </td><td colspan="1" rowspan="1">
+        <img src="img/icon_acquire.gif"></img></td><td colspan="1" rowspan="1">
+        <b>S04E06 - 28-Oct-2010</b><br clear="none"></br><a shape="rect" href="http://www.tvrage.com/The_Big_Bang_Theory/episodes/1064985563/04x06" target="_blank"> The Irish Pub Formulation</a>
+    </td><td colspan="1" rowspan="1">
+        <a shape="rect" href="myshows.php?action=Update&amp;showid=1115&amp;season=4&amp;episode=6&amp;seen=0" style="font-size: xx-small;">ACQUIRED</a> / <a shape="rect" href="myshows.php?action=Update&amp;showid=1115&amp;season=4&amp;episode=6&amp;seen=1" style="font-size: xx-small;">SEEN</a><br clear="none"></br>
+        <a shape="rect" href="JavaScript:GotoConfirm('Are you sure you want to delete: The Big Bang Theory?\n\nAll your episode-records for this show will be lost.','myshows.php?action=Remove&amp;showid=1115')" style="font-size: xx-small;">REMOVE</a><br clear="none"></br>
+        <a shape="rect" href="myshows.php?action=Ignore&amp;Ignore=1&amp;showid=1115" style="font-size: xx-small;">Ignore</a> - <a shape="rect" href="myshows.php?action=Split&amp;Split=1&amp;showid=1115" style="font-size: xx-small;">Disallow Split</a> <a shape="rect" href="forum/viewtopic.php?t=66">[?]</a><br clear="none"></br>
+    </td></tr><tr align="center" style="background-color: "><td colspan="1" rowspan="1">
+        <a shape="rect" href="myshows.php?action=expand&amp;showid=834&amp;status=0"><img border="0" src="img/icon_plus.gif" style="cursor: pointer;"></img></a>
+    </td><td colspan="1" rowspan="1">
+        <a shape="rect" class="shows" href="http://www.tvrage.com/The_Office" target="_blank">The Office</a>
+    </td><td colspan="1" rowspan="1">
+        <b>
+            S07E05 </b>
+    </td><td colspan="1" rowspan="1">
+        <img src="img/icon_acquire.gif"></img></td><td colspan="1" rowspan="1">
+        <b>S07E06 - 28-Oct-2010</b><br clear="none"></br><a shape="rect" href="http://www.tvrage.com/The_Office/episodes/1064985565/07x06" target="_blank"> Costume Contest</a>
+    </td><td colspan="1" rowspan="1">
+        <a shape="rect" href="myshows.php?action=Update&amp;showid=834&amp;season=7&amp;episode=6&amp;seen=0" style="font-size: xx-small;">ACQUIRED</a> / <a shape="rect" href="myshows.php?action=Update&amp;showid=834&amp;season=7&amp;episode=6&amp;seen=1" style="font-size: xx-small;">SEEN</a><br clear="none"></br> <a shape="rect" href="JavaScript:GotoConfirm('Are you sure you want to delete: The Office?\n\nAll your episode-records for this show will be lost.','myshows.php?action=Remove&amp;showid=834')" style="font-size: xx-small;">REMOVE</a><br clear="none"></br>
+        <a shape="rect" href="myshows.php?action=Ignore&amp;Ignore=1&amp;showid=834" style="font-size: xx-small;">Ignore</a> - <a shape="rect" href="myshows.php?action=Split&amp;Split=1&amp;showid=834" style="font-size: xx-small;">Disallow Split</a> <a shape="rect" href="forum/viewtopic.php?t=66">[?]</a><br clear="none"></br>
+    </td></tr><tr align="center" style="background-color: "><td colspan="1" rowspan="1">
+        <a shape="rect" href="myshows.php?action=expand&amp;showid=3370&amp;status=0"><img border="0" src="img/icon_plus.gif" style="cursor: pointer;"></img></a>
+    </td><td colspan="1" rowspan="1">
+        <a shape="rect" class="shows" href="http://www.tvrage.com/shows/id-18682" target="_blank">Sanctuary (US)</a>
+    </td><td colspan="1" rowspan="1">
+        <b>
+            S01E13 </b>
+    </td><td colspan="1" rowspan="1">
+        <img src="img/icon_acquire.gif"></img></td><td colspan="1" rowspan="1">
+        <b>S03E03 - 29-Oct-2010</b><br clear="none"></br><a shape="rect" href="http://www.tvrage.com/Sanctuary/episodes/1064985572/03x03" target="_blank"> Bank Job</a>
+    </td><td colspan="1" rowspan="1">
+        <a shape="rect" href="myshows.php?action=Update&amp;showid=3370&amp;season=3&amp;episode=3&amp;seen=0" style="font-size: xx-small;">ACQUIRED</a> / <a shape="rect" href="myshows.php?action=Update&amp;showid=3370&amp;season=3&amp;episode=3&amp;seen=1" style="font-size: xx-small;">SEEN</a><br clear="none"></br>
+        <a shape="rect" href="JavaScript:GotoConfirm('Are you sure you want to delete: Sanctuary (US)?\n\nAll your episode-records for this show will be lost.','myshows.php?action=Remove&amp;showid=3370')" style="font-size: xx-small;">REMOVE</a><br clear="none"></br>
+        <a shape="rect" href="myshows.php?action=Ignore&amp;Ignore=1&amp;showid=3370" style="font-size: xx-small;">Ignore</a> - <a shape="rect" href="myshows.php?action=Split&amp;Split=1&amp;showid=3370" style="font-size: xx-small;">Disallow Split</a> <a shape="rect" href="forum/viewtopic.php?t=66">[?]</a><br clear="none"></br>
+    </td></tr><tr align="center" style="background-color: "><td colspan="1" rowspan="1">
+        <a shape="rect" href="myshows.php?action=expand&amp;showid=323&amp;status=0"><img border="0" src="img/icon_plus.gif" style="cursor: pointer;"></img></a>
+    </td><td colspan="1" rowspan="1">
+        <a shape="rect" class="shows" href="http://www.tvrage.com/Supernatural" target="_blank">Supernatural</a>
+    </td><td colspan="1" rowspan="1">
+        <b>
+            S06E01 </b>
+    </td><td colspan="1" rowspan="1">
+        <img src="img/icon_acquire.gif"></img></td><td colspan="1" rowspan="1">
+        <b>S06E06 - 29-Oct-2010</b><br clear="none"></br><a shape="rect" href="http://www.tvrage.com/Supernatural/episodes/1064978455/06x06" target="_blank"> You Can't Handle the Truth</a>
+    </td><td colspan="1" rowspan="1">
+        <a shape="rect" href="myshows.php?action=Update&amp;showid=323&amp;season=6&amp;episode=6&amp;seen=0" style="font-size: xx-small;">ACQUIRED</a> / <a shape="rect" href="myshows.php?action=Update&amp;showid=323&amp;season=6&amp;episode=6&amp;seen=1" style="font-size: xx-small;">SEEN</a><br clear="none"></br> <a shape="rect" href="JavaScript:GotoConfirm('Are you sure you want to delete: Supernatural?\n\nAll your episode-records for this show will be lost.','myshows.php?action=Remove&amp;showid=323')" style="font-size: xx-small;">REMOVE</a><br clear="none"></br>
+        <a shape="rect" href="myshows.php?action=Ignore&amp;Ignore=1&amp;showid=323" style="font-size: xx-small;">Ignore</a> - <a shape="rect" href="myshows.php?action=Split&amp;Split=1&amp;showid=323" style="font-size: xx-small;">Disallow Split</a> <a shape="rect" href="forum/viewtopic.php?t=66">[?]</a><br clear="none"></br>
+    </td></tr><tr align="center" style="background-color: "><td colspan="1" rowspan="1">
+        <a shape="rect" href="myshows.php?action=expand&amp;showid=325&amp;status=1"><img border="0" src="img/icon_plus.gif" style="cursor: pointer;"></img></a>
+    </td><td colspan="1" rowspan="1">
+        <a shape="rect" class="shows" href="http://www.tvrage.com/Criminal_Minds" target="_blank">Criminal Minds</a>
+    </td><td colspan="1" rowspan="1">
+        <b>
+            S01E12 </b>
+    </td><td colspan="1" rowspan="1">
+        <img src="img/icon_watch.gif"></img></td><td colspan="1" rowspan="1">
+        <b>S01E13 - 18-Jan-2006</b><br clear="none"></br><a shape="rect" href="http://www.tvrage.com/Criminal_Minds/episodes/314912/01x13" target="_blank"> Poison</a>
+    </td><td colspan="1" rowspan="1">
+        <a shape="rect" href="myshows.php?action=Update&amp;showid=325&amp;season=1&amp;episode=13&amp;seen=1" style="font-size: xx-small;">SEEN</a><br clear="none"></br> <a shape="rect" href="JavaScript:GotoConfirm('Are you sure you want to delete: Criminal Minds?\n\nAll your episode-records for this show will be lost.','myshows.php?action=Remove&amp;showid=325')" style="font-size: xx-small;">REMOVE</a><br clear="none"></br>
+        <a shape="rect" href="myshows.php?action=Ignore&amp;Ignore=1&amp;showid=325" style="font-size: xx-small;">Ignore</a> - <a shape="rect" href="myshows.php?action=Split&amp;Split=1&amp;showid=325" style="font-size: xx-small;">Disallow Split</a> <a shape="rect" href="forum/viewtopic.php?t=66">[?]</a><br clear="none"></br>
+    </td></tr><tr align="center" style="background-color: "><td colspan="1" rowspan="1">
+        <a shape="rect" href="myshows.php?action=expand&amp;showid=3&amp;status=1"><img border="0" src="img/icon_plus.gif" style="cursor: pointer;"></img></a>
+    </td><td colspan="1" rowspan="1">
+        <a shape="rect" class="shows" href="http://www.tvrage.com/24" target="_blank">24</a>
+    </td><td colspan="1" rowspan="1">
+        <b>
+            S05E07 </b>
+    </td><td colspan="1" rowspan="1">
+        <img src="img/icon_watch.gif"></img></td><td colspan="1" rowspan="1">
+        <b>S05E08 - 13-Feb-2006</b><br clear="none"></br><a shape="rect" href="http://www.tvrage.com/24/episodes/310709/05x08" target="_blank"> Day 5:
+        2:00 P.M.-3:00 P.M.</a>
+    </td><td colspan="1" rowspan="1">
+        <a shape="rect" href="myshows.php?action=Update&amp;showid=3&amp;season=5&amp;episode=8&amp;seen=1" style="font-size: xx-small;">SEEN</a><br clear="none"></br>
+        <a shape="rect" href="JavaScript:GotoConfirm('Are you sure you want to delete: 24?\n\nAll your episode-records for this show will be lost.','myshows.php?action=Remove&amp;showid=3')" style="font-size: xx-small;">REMOVE</a><br clear="none"></br>
+        <a shape="rect" href="myshows.php?action=Ignore&amp;Ignore=1&amp;showid=3" style="font-size: xx-small;">Ignore</a> - <a shape="rect" href="myshows.php?action=Split&amp;Split=1&amp;showid=3" style="font-size: xx-small;">Disallow Split</a> <a shape="rect" href="forum/viewtopic.php?t=66">[?]</a><br clear="none"></br>
+    </td></tr><tr align="center" style="background-color: "><td colspan="1" rowspan="1">
+        <a shape="rect" href="myshows.php?action=expand&amp;showid=3731&amp;status=1"><img border="0" src="img/icon_plus.gif" style="cursor: pointer;"></img></a>
+    </td><td colspan="1" rowspan="1">
+        <a shape="rect" class="shows" href="http://www.tvrage.com/shows/id-18175" target="_blank">Wallander</a>
+    </td><td colspan="1" rowspan="1">
+        <b>
+            - </b>
+    </td><td colspan="1" rowspan="1">
+        <img src="img/icon_watch.gif"></img></td><td colspan="1" rowspan="1">
+        <b>S01E01 - 30-Nov-2008</b><br clear="none"></br><a shape="rect" href="http://www.tvrage.com/shows/id-18175/episodes/737722/01x01" target="_blank"> Sidetracked</a>
+    </td><td colspan="1" rowspan="1">
+        <a shape="rect" href="myshows.php?action=Update&amp;showid=3731&amp;season=1&amp;episode=1&amp;seen=1" style="font-size: xx-small;">SEEN</a><br clear="none"></br> <a shape="rect" href="JavaScript:GotoConfirm('Are you sure you want to delete: Wallander?\n\nAll your episode-records for this show will be lost.','myshows.php?action=Remove&amp;showid=3731')" style="font-size: xx-small;">REMOVE</a><br clear="none"></br>
+        <a shape="rect" href="myshows.php?action=Ignore&amp;Ignore=1&amp;showid=3731" style="font-size: xx-small;">Ignore</a> - <a shape="rect" href="myshows.php?action=Split&amp;Split=1&amp;showid=3731" style="font-size: xx-small;">Disallow Split</a> <a shape="rect" href="forum/viewtopic.php?t=66">[?]</a><br clear="none"></br>
+    </td></tr><tr align="center" style="background-color: "><td colspan="1" rowspan="1">
+        <a shape="rect" href="myshows.php?action=expand&amp;showid=3920&amp;status=1"><img border="0" src="img/icon_plus.gif" style="cursor: pointer;"></img></a>
+    </td><td colspan="1" rowspan="1">
+        <a shape="rect" class="shows" href="http://www.tvrage.com/shows/id-19267" target="_blank">Castle (2009)</a>
+    </td><td colspan="1" rowspan="1">
+        <b>
+            - </b>
+    </td><td colspan="1" rowspan="1">
+        <img src="img/icon_watch.gif"></img></td><td colspan="1" rowspan="1">
+        <b>S01E01 - 09-Mar-2009</b><br clear="none"></br><a shape="rect" href="http://www.tvrage.com/Castle/episodes/703445/01x01" target="_blank">
+        Flowers for Your Grave</a>
+    </td><td colspan="1" rowspan="1">
+        <a shape="rect" href="myshows.php?action=Update&amp;showid=3920&amp;season=1&amp;episode=1&amp;seen=1" style="font-size: xx-small;">SEEN</a><br clear="none"></br> <a shape="rect" href="JavaScript:GotoConfirm('Are you sure you want to delete: Castle (2009)?\n\nAll your episode-records for this show will be lost.','myshows.php?action=Remove&amp;showid=3920')" style="font-size: xx-small;">REMOVE</a><br clear="none"></br>
+        <a shape="rect" href="myshows.php?action=Ignore&amp;Ignore=1&amp;showid=3920" style="font-size: xx-small;">Ignore</a> - <a shape="rect" href="myshows.php?action=Split&amp;Split=1&amp;showid=3920" style="font-size: xx-small;">Disallow Split</a> <a shape="rect" href="forum/viewtopic.php?t=66">[?]</a><br clear="none"></br>
+    </td></tr><tr align="center" style="background-color: "><td colspan="1" rowspan="1">
+        <a shape="rect" href="myshows.php?action=expand&amp;showid=3370&amp;status=1"><img border="0" src="img/icon_plus.gif" style="cursor: pointer;"></img></a>
+    </td><td colspan="1" rowspan="1">
+        <a shape="rect" class="shows" href="http://www.tvrage.com/shows/id-18682" target="_blank">Sanctuary (US)</a>
+    </td><td colspan="1" rowspan="1">
+        <b>
+            S01E13 </b>
+    </td><td colspan="1" rowspan="1">
+        <img src="img/icon_watch.gif"></img></td><td colspan="1" rowspan="1">
+        <b>S02E01 - 09-Oct-2009</b><br clear="none"></br><a shape="rect" href="http://www.tvrage.com/Sanctuary/episodes/784504/02x01" target="_blank">
+        End of Nights (1)</a>
+    </td><td colspan="1" rowspan="1">
+        <a shape="rect" href="myshows.php?action=Update&amp;showid=3370&amp;season=2&amp;episode=1&amp;seen=1" style="font-size: xx-small;">SEEN</a><br clear="none"></br> <a shape="rect" href="JavaScript:GotoConfirm('Are you sure you want to delete: Sanctuary (US)?\n\nAll your episode-records for this show will be lost.','myshows.php?action=Remove&amp;showid=3370')" style="font-size: xx-small;">REMOVE</a><br clear="none"></br>
+        <a shape="rect" href="myshows.php?action=Ignore&amp;Ignore=1&amp;showid=3370" style="font-size: xx-small;">Ignore</a> - <a shape="rect" href="myshows.php?action=Split&amp;Split=1&amp;showid=3370" style="font-size: xx-small;">Disallow Split</a> <a shape="rect" href="forum/viewtopic.php?t=66">[?]</a><br clear="none"></br>
+    </td></tr><tr align="center" style="background-color: "><td colspan="1" rowspan="1">
+        <a shape="rect" href="myshows.php?action=expand&amp;showid=3213&amp;status=1"><img border="0" src="img/icon_plus.gif" style="cursor: pointer;"></img></a>
+    </td><td colspan="1" rowspan="1">
+        <a shape="rect" class="shows" href="http://www.tvrage.com/shows/id-18434" target="_blank">Being Human (UK)</a>
+    </td><td colspan="1" rowspan="1">
+        <b>
+            S01E06 </b>
+    </td><td colspan="1" rowspan="1">
+        <img src="img/icon_watch.gif"></img></td><td colspan="1" rowspan="1">
+        <b>S02E01 - 10-Jan-2010</b><br clear="none"></br><a shape="rect" href="http://www.tvrage.com/shows/id-18434/episodes/1064882888/02x01" target="_blank"> Series 2, Episode 1</a>
+    </td><td colspan="1" rowspan="1">
+        <a shape="rect" href="myshows.php?action=Update&amp;showid=3213&amp;season=2&amp;episode=1&amp;seen=1" style="font-size: xx-small;">SEEN</a><br clear="none"></br> <a shape="rect" href="JavaScript:GotoConfirm('Are you sure you want to delete: Being Human (UK)?\n\nAll your episode-records for this show will be lost.','myshows.php?action=Remove&amp;showid=3213')" style="font-size: xx-small;">REMOVE</a><br clear="none"></br>
+        <a shape="rect" href="myshows.php?action=Ignore&amp;Ignore=1&amp;showid=3213" style="font-size: xx-small;">Ignore</a> - <a shape="rect" href="myshows.php?action=Split&amp;Split=1&amp;showid=3213" style="font-size: xx-small;">Disallow Split</a> <a shape="rect" href="forum/viewtopic.php?t=66">[?]</a><br clear="none"></br>
+    </td></tr><tr align="center" style="background-color: "><td colspan="1" rowspan="1">
+        <a shape="rect" href="myshows.php?action=expand&amp;showid=2219&amp;status=1"><img border="0" src="img/icon_plus.gif" style="cursor: pointer;"></img></a>
+    </td><td colspan="1" rowspan="1">
+        <a shape="rect" class="shows" href="http://www.tvrage.com/Private_Practice" target="_blank">Private Practice</a>
+    </td><td colspan="1" rowspan="1">
+        <b>
+            S03E14 </b>
+    </td><td colspan="1" rowspan="1">
+        <img src="img/icon_watch.gif"></img></td><td colspan="1" rowspan="1">
+        <b>S03E15 - 18-Feb-2010</b><br clear="none"></br><a shape="rect" href="http://www.tvrage.com/Private_Practice/episodes/1064899226/03x15" target="_blank"> 'Til Death Do Us Part</a>
+    </td><td colspan="1" rowspan="1">
+        <a shape="rect" href="myshows.php?action=Update&amp;showid=2219&amp;season=3&amp;episode=15&amp;seen=1" style="font-size: xx-small;">SEEN</a><br clear="none"></br>
+        <a shape="rect" href="JavaScript:GotoConfirm('Are you sure you want to delete: Private Practice?\n\nAll your episode-records for this show will be lost.','myshows.php?action=Remove&amp;showid=2219')" style="font-size: xx-small;">REMOVE</a><br clear="none"></br>
+        <a shape="rect" href="myshows.php?action=Ignore&amp;Ignore=1&amp;showid=2219" style="font-size: xx-small;">Ignore</a> - <a shape="rect" href="myshows.php?action=Split&amp;Split=1&amp;showid=2219" style="font-size: xx-small;">Disallow Split</a> <a shape="rect" href="forum/viewtopic.php?t=66">[?]</a><br clear="none"></br>
+    </td></tr><tr align="center" style="background-color: "><td colspan="1" rowspan="1">
+        <a shape="rect" href="myshows.php?action=expand&amp;showid=86&amp;status=1"><img border="0" src="img/icon_plus.gif" style="cursor: pointer;"></img></a>
+    </td><td colspan="1" rowspan="1">
+        <a shape="rect" class="shows" href="http://www.tvrage.com/Greys_Anatomy" target="_blank">Grey's Anatomy</a>
+    </td><td colspan="1" rowspan="1">
+        <b>
+            S06E17 </b>
+    </td><td colspan="1" rowspan="1">
+        <img src="img/icon_watch.gif"></img></td><td colspan="1" rowspan="1">
+        <b>S06E18 - 25-Mar-2010</b><br clear="none"></br><a shape="rect" href="http://www.tvrage.com/Greys_Anatomy/episodes/1064909225/06x18" target="_blank"> Suicide is Painless</a>
+    </td><td colspan="1" rowspan="1">
+        <a shape="rect" href="myshows.php?action=Update&amp;showid=86&amp;season=6&amp;episode=18&amp;seen=1" style="font-size: xx-small;">SEEN</a><br clear="none"></br> <a shape="rect" href="JavaScript:GotoConfirm('Are you sure you want to delete: Grey\'s Anatomy?\n\nAll your episode-records for this show will be lost.','myshows.php?action=Remove&amp;showid=86')" style="font-size: xx-small;">REMOVE</a><br clear="none"></br>
+        <a shape="rect" href="myshows.php?action=Ignore&amp;Ignore=1&amp;showid=86" style="font-size: xx-small;">Ignore</a> - <a shape="rect" href="myshows.php?action=Split&amp;Split=1&amp;showid=86" style="font-size: xx-small;">Disallow Split</a> <a shape="rect" href="forum/viewtopic.php?t=66">[?]</a><br clear="none"></br>
+    </td></tr><tr align="center" style="background-color: "><td colspan="1" rowspan="1">
+        <a shape="rect" href="myshows.php?action=expand&amp;showid=1004&amp;status=1"><img border="0" src="img/icon_plus.gif" style="cursor: pointer;"></img></a>
+    </td><td colspan="1" rowspan="1">
+        <a shape="rect" class="shows" href="http://www.tvrage.com/Psych" target="_blank">Psych</a>
+    </td><td colspan="1" rowspan="1">
+        <b>
+            S04E16 </b>
+    </td><td colspan="1" rowspan="1">
+        <img src="img/icon_watch.gif"></img></td><td colspan="1" rowspan="1">
+        <b>S05E01 - 14-Jul-2010</b><br clear="none"></br><a shape="rect" href="http://www.tvrage.com/Psych/episodes/1064910596/05x01" target="_blank">
+        Romeo and Juliet and Juliet</a>
+    </td><td colspan="1" rowspan="1">
+        <a shape="rect" href="myshows.php?action=Update&amp;showid=1004&amp;season=5&amp;episode=1&amp;seen=1" style="font-size: xx-small;">SEEN</a><br clear="none"></br> <a shape="rect" href="JavaScript:GotoConfirm('Are you sure you want to delete: Psych?\n\nAll your episode-records for this show will be lost.','myshows.php?action=Remove&amp;showid=1004')" style="font-size: xx-small;">REMOVE</a><br clear="none"></br>
+        <a shape="rect" href="myshows.php?action=Ignore&amp;Ignore=1&amp;showid=1004" style="font-size: xx-small;">Ignore</a> - <a shape="rect" href="myshows.php?action=Split&amp;Split=1&amp;showid=1004" style="font-size: xx-small;">Disallow Split</a> <a shape="rect" href="forum/viewtopic.php?t=66">[?]</a><br clear="none"></br>
+    </td></tr><tr align="center" style="background-color: "><td colspan="1" rowspan="1">
+        <a shape="rect" href="myshows.php?action=expand&amp;showid=6018&amp;status=1"><img border="0" src="img/icon_plus.gif" style="cursor: pointer;"></img></a>
+    </td><td colspan="1" rowspan="1">
+        <a shape="rect" class="shows" href="http://www.tvrage.com/shows/id-24787" target="_blank">The Pillars Of The Earth</a>
+    </td><td colspan="1" rowspan="1">
+        <b>
+            - </b>
+    </td><td colspan="1" rowspan="1">
+        <img src="img/icon_watch.gif"></img></td><td colspan="1" rowspan="1">
+        <b>S01E01 - 23-Jul-2010</b><br clear="none"></br><a shape="rect" href="http://www.tvrage.com/The_Pillars_Of_The_Earth/episodes/1064939147/01x01" target="_blank"> Anarchy</a>
+    </td><td colspan="1" rowspan="1">
+        <a shape="rect" href="myshows.php?action=Update&amp;showid=6018&amp;season=1&amp;episode=1&amp;seen=1" style="font-size: xx-small;">SEEN</a><br clear="none"></br> <a shape="rect" href="JavaScript:GotoConfirm('Are you sure you want to delete: The Pillars Of The Earth?\n\nAll your episode-records for this show will be lost.','myshows.php?action=Remove&amp;showid=6018')" style="font-size: xx-small;">REMOVE</a><br clear="none"></br>
+        <a shape="rect" href="myshows.php?action=Ignore&amp;Ignore=1&amp;showid=6018" style="font-size: xx-small;">Ignore</a> - <a shape="rect" href="myshows.php?action=Split&amp;Split=1&amp;showid=6018" style="font-size: xx-small;">Disallow Split</a> <a shape="rect" href="forum/viewtopic.php?t=66">[?]</a><br clear="none"></br>
+    </td></tr><tr align="center" style="background-color: "><td colspan="1" rowspan="1">
+        <a shape="rect" href="myshows.php?action=expand&amp;showid=42&amp;status=1"><img border="0" src="img/icon_plus.gif" style="cursor: pointer;"></img></a>
+    </td><td colspan="1" rowspan="1">
+        <a shape="rect" class="shows" href="http://www.tvrage.com/Futurama" target="_blank">Futurama</a>
+    </td><td colspan="1" rowspan="1">
+        <b>
+            S06E11 </b>
+    </td><td colspan="1" rowspan="1">
+        <img src="img/icon_watch.gif"></img></td><td colspan="1" rowspan="1">
+        <b>S06E12 - 02-Sep-2010</b><br clear="none"></br><a shape="rect" href="http://www.tvrage.com/Futurama/episodes/1064943030/06x12" target="_blank"> The Mutants Are Revolting</a>
+    </td><td colspan="1" rowspan="1">
+        <a shape="rect" href="myshows.php?action=Update&amp;showid=42&amp;season=6&amp;episode=12&amp;seen=1" style="font-size: xx-small;">SEEN</a><br clear="none"></br> <a shape="rect" href="JavaScript:GotoConfirm('Are you sure you want to delete: Futurama?\n\nAll your episode-records for this show will be lost.','myshows.php?action=Remove&amp;showid=42')" style="font-size: xx-small;">REMOVE</a><br clear="none"></br>
+        <a shape="rect" href="myshows.php?action=Ignore&amp;Ignore=1&amp;showid=42" style="font-size: xx-small;">Ignore</a> - <a shape="rect" href="myshows.php?action=Split&amp;Split=1&amp;showid=42" style="font-size: xx-small;">Disallow Split</a> <a shape="rect" href="forum/viewtopic.php?t=66">[?]</a><br clear="none"></br>
+    </td></tr><tr align="center" style="background-color: "><td colspan="1" rowspan="1">
+        <a shape="rect" href="myshows.php?action=expand&amp;showid=2298&amp;status=1"><img border="0" src="img/icon_plus.gif" style="cursor: pointer;"></img></a>
+    </td><td colspan="1" rowspan="1">
+        <a shape="rect" class="shows" href="http://www.tvrage.com/Gossip_Girl" target="_blank">Gossip Girl</a>
+    </td><td colspan="1" rowspan="1">
+        <b>
+            S03E22 </b>
+    </td><td colspan="1" rowspan="1">
+        <img src="img/icon_watch.gif"></img></td><td colspan="1" rowspan="1">
+        <b>S04E01 - 13-Sep-2010</b><br clear="none"></br><a shape="rect" href="http://www.tvrage.com/Gossip_Girl/episodes/1064950958/04x01" target="_blank"> Belles de Jour</a>
+    </td><td colspan="1" rowspan="1">
+        <a shape="rect" href="myshows.php?action=Update&amp;showid=2298&amp;season=4&amp;episode=1&amp;seen=1" style="font-size: xx-small;">SEEN</a><br clear="none"></br> <a shape="rect" href="JavaScript:GotoConfirm('Are you sure you want to delete: Gossip Girl?\n\nAll your episode-records for this show will be lost.','myshows.php?action=Remove&amp;showid=2298')" style="font-size: xx-small;">REMOVE</a><br clear="none"></br>
+        <a shape="rect" href="myshows.php?action=Ignore&amp;Ignore=1&amp;showid=2298" style="font-size: xx-small;">Ignore</a> - <a shape="rect" href="myshows.php?action=Split&amp;Split=1&amp;showid=2298" style="font-size: xx-small;">Disallow Split</a> <a shape="rect" href="forum/viewtopic.php?t=66">[?]</a><br clear="none"></br>
+    </td></tr><tr align="center" style="background-color: "><td colspan="1" rowspan="1">
+        <a shape="rect" href="myshows.php?action=expand&amp;showid=6042&amp;status=1"><img border="0" src="img/icon_plus.gif" style="cursor: pointer;"></img></a>
+    </td><td colspan="1" rowspan="1">
+        <a shape="rect" class="shows" href="http://www.tvrage.com/shows/id-24837" target="_blank">Undercovers</a>
+    </td><td colspan="1" rowspan="1">
+        <b>
+            - </b>
+    </td><td colspan="1" rowspan="1">
+        <img src="img/icon_watch.gif"></img></td><td colspan="1" rowspan="1">
+        <b>S01E01 - 22-Sep-2010</b><br clear="none"></br><a shape="rect" href="http://www.tvrage.com/Undercovers/episodes/1064933982/01x01" target="_blank"> Pilot</a>
+    </td><td colspan="1" rowspan="1">
+        <a shape="rect" href="myshows.php?action=Update&amp;showid=6042&amp;season=1&amp;episode=1&amp;seen=1" style="font-size: xx-small;">SEEN</a><br clear="none"></br> <a shape="rect" href="JavaScript:GotoConfirm('Are you sure you want to delete: Undercovers?\n\nAll your episode-records for this show will be lost.','myshows.php?action=Remove&amp;showid=6042')" style="font-size: xx-small;">REMOVE</a><br clear="none"></br>
+        <a shape="rect" href="myshows.php?action=Ignore&amp;Ignore=1&amp;showid=6042" style="font-size: xx-small;">Ignore</a> - <a shape="rect" href="myshows.php?action=Split&amp;Split=1&amp;showid=6042" style="font-size: xx-small;">Disallow Split</a> <a shape="rect" href="forum/viewtopic.php?t=66">[?]</a><br clear="none"></br>
+    </td></tr><tr align="center" style="background-color: "><td colspan="1" rowspan="1">
+        <a shape="rect" href="myshows.php?action=expand&amp;showid=32&amp;status=1"><img border="0" src="img/icon_plus.gif" style="cursor: pointer;"></img></a>
+    </td><td colspan="1" rowspan="1">
+        <a shape="rect" class="shows" href="http://www.tvrage.com/Desperate_Housewives" target="_blank">Desperate Housewives</a>
+    </td><td colspan="1" rowspan="1">
+        <b>
+            S06E23 </b>
+    </td><td colspan="1" rowspan="1">
+        <img src="img/icon_watch.gif"></img></td><td colspan="1" rowspan="1">
+        <b>S07E01 - 26-Sep-2010</b><br clear="none"></br><a shape="rect" href="http://www.tvrage.com/Desperate_Housewives/episodes/1064949416/07x01" target="_blank"> Remember Paul</a>
+    </td><td colspan="1" rowspan="1">
+        <a shape="rect" href="myshows.php?action=Update&amp;showid=32&amp;season=7&amp;episode=1&amp;seen=1" style="font-size: xx-small;">SEEN</a><br clear="none"></br> <a shape="rect" href="JavaScript:GotoConfirm('Are you sure you want to delete: Desperate Housewives?\n\nAll your episode-records for this show will be lost.','myshows.php?action=Remove&amp;showid=32')" style="font-size: xx-small;">REMOVE</a><br clear="none"></br>
+        <a shape="rect" href="myshows.php?action=Ignore&amp;Ignore=1&amp;showid=32" style="font-size: xx-small;">Ignore</a> - <a shape="rect" href="myshows.php?action=Split&amp;Split=1&amp;showid=32" style="font-size: xx-small;">Disallow Split</a> <a shape="rect" href="forum/viewtopic.php?t=66">[?]</a><br clear="none"></br>
+    </td></tr><tr align="center" style="background-color: "><td colspan="1" rowspan="1">
+        <a shape="rect" href="myshows.php?action=expand&amp;showid=323&amp;status=1"><img border="0" src="img/icon_plus.gif" style="cursor: pointer;"></img></a>
+    </td><td colspan="1" rowspan="1">
+        <a shape="rect" class="shows" href="http://www.tvrage.com/Supernatural" target="_blank">Supernatural</a>
+    </td><td colspan="1" rowspan="1">
+        <b>
+            S06E01 </b>
+    </td><td colspan="1" rowspan="1">
+        <img src="img/icon_watch.gif"></img></td><td colspan="1" rowspan="1">
+        <b>S06E02 - 01-Oct-2010</b><br clear="none"></br><a shape="rect" href="http://www.tvrage.com/Supernatural/episodes/1064969305/06x02" target="_blank"> Two and a Half Men</a>
+    </td><td colspan="1" rowspan="1">
+        <a shape="rect" href="myshows.php?action=Update&amp;showid=323&amp;season=6&amp;episode=2&amp;seen=1" style="font-size: xx-small;">SEEN</a><br clear="none"></br> <a shape="rect" href="JavaScript:GotoConfirm('Are you sure you want to delete: Supernatural?\n\nAll your episode-records for this show will be lost.','myshows.php?action=Remove&amp;showid=323')" style="font-size: xx-small;">REMOVE</a><br clear="none"></br>
+        <a shape="rect" href="myshows.php?action=Ignore&amp;Ignore=1&amp;showid=323" style="font-size: xx-small;">Ignore</a> - <a shape="rect" href="myshows.php?action=Split&amp;Split=1&amp;showid=323" style="font-size: xx-small;">Disallow Split</a> <a shape="rect" href="forum/viewtopic.php?t=66">[?]</a><br clear="none"></br>
+    </td></tr><tr align="center" style="background-color: "><td colspan="1" rowspan="1">
+        <a shape="rect" href="myshows.php?action=expand&amp;showid=985&amp;status=1"><img border="0" src="img/icon_plus.gif" style="cursor: pointer;"></img></a>
+    </td><td colspan="1" rowspan="1">
+        <a shape="rect" class="shows" href="http://www.tvrage.com/shows/id-11011" target="_blank">Caprica</a>
+    </td><td colspan="1" rowspan="1">
+        <b>
+            S01E09 </b>
+    </td><td colspan="1" rowspan="1">
+        <img src="img/icon_watch.gif"></img></td><td colspan="1" rowspan="1">
+        <b>S01E10 - 05-Oct-2010</b><br clear="none"></br><a shape="rect" href="http://www.tvrage.com/Caprica/episodes/1064916389/01x10" target="_blank"> Unvanquished</a>
+    </td><td colspan="1" rowspan="1">
+        <a shape="rect" href="myshows.php?action=Update&amp;showid=985&amp;season=1&amp;episode=10&amp;seen=1" style="font-size: xx-small;">SEEN</a><br clear="none"></br> <a shape="rect" href="JavaScript:GotoConfirm('Are you sure you want to delete: Caprica?\n\nAll your episode-records for this show will be lost.','myshows.php?action=Remove&amp;showid=985')" style="font-size: xx-small;">REMOVE</a><br clear="none"></br>
+        <a shape="rect" href="myshows.php?action=Ignore&amp;Ignore=1&amp;showid=985" style="font-size: xx-small;">Ignore</a> - <a shape="rect" href="myshows.php?action=Split&amp;Split=1&amp;showid=985" style="font-size: xx-small;">Disallow Split</a> <a shape="rect" href="forum/viewtopic.php?t=66">[?]</a><br clear="none"></br>
+    </td></tr><tr align="center" style="background-color: "><td colspan="1" rowspan="1">
+        <a shape="rect" href="myshows.php?action=expand&amp;showid=2267&amp;status=1"><img border="0" src="img/icon_plus.gif" style="cursor: pointer;"></img></a>
+    </td><td colspan="1" rowspan="1">
+        <a shape="rect" class="shows" href="http://www.tvrage.com/Chuck" target="_blank">Chuck</a>
+    </td><td colspan="1" rowspan="1">
+        <b>
+            S04E04 </b>
+    </td><td colspan="1" rowspan="1">
+        <img src="img/icon_watch.gif"></img></td><td colspan="1" rowspan="1">
+        <b>S04E05 - 18-Oct-2010</b><br clear="none"></br><a shape="rect" href="http://www.tvrage.com/Chuck/episodes/1064976553/04x05" target="_blank">
+        Chuck Versus the Couch Lock</a>
+    </td><td colspan="1" rowspan="1">
+        <a shape="rect" href="myshows.php?action=Update&amp;showid=2267&amp;season=4&amp;episode=5&amp;seen=1" style="font-size: xx-small;">SEEN</a><br clear="none"></br> <a shape="rect" href="JavaScript:GotoConfirm('Are you sure you want to delete: Chuck?\n\nAll your episode-records for this show will be lost.','myshows.php?action=Remove&amp;showid=2267')" style="font-size: xx-small;">REMOVE</a><br clear="none"></br>
+        <a shape="rect" href="myshows.php?action=Ignore&amp;Ignore=1&amp;showid=2267" style="font-size: xx-small;">Ignore</a> - <a shape="rect" href="myshows.php?action=Split&amp;Split=1&amp;showid=2267" style="font-size: xx-small;">Disallow Split</a> <a shape="rect" href="forum/viewtopic.php?t=66">[?]</a><br clear="none"></br>
+    </td></tr><tr align="center" style="background-color: "><td colspan="1" rowspan="1">
+        <a shape="rect" href="myshows.php?action=expand&amp;showid=1123&amp;status=1"><img border="0" src="img/icon_plus.gif" style="cursor: pointer;"></img></a>
+    </td><td colspan="1" rowspan="1">
+        <a shape="rect" class="shows" href="http://www.tvrage.com/Dexter" target="_blank">Dexter</a>
+    </td><td colspan="1" rowspan="1">
+        <b>
+            S05E04 </b>
+    </td><td colspan="1" rowspan="1">
+        <img src="img/icon_watch.gif"></img></td><td colspan="1" rowspan="1">
+        <b>S05E05 - 24-Oct-2010</b><br clear="none"></br><a shape="rect" href="http://www.tvrage.com/Dexter/episodes/1064949420/05x05" target="_blank">
+        First Blood</a>
+    </td><td colspan="1" rowspan="1">
+        <a shape="rect" href="myshows.php?action=Update&amp;showid=1123&amp;season=5&amp;episode=5&amp;seen=1" style="font-size: xx-small;">SEEN</a><br clear="none"></br> <a shape="rect" href="JavaScript:GotoConfirm('Are you sure you want to delete: Dexter?\n\nAll your episode-records for this show will be lost.','myshows.php?action=Remove&amp;showid=1123')" style="font-size: xx-small;">REMOVE</a><br clear="none"></br>
+        <a shape="rect" href="myshows.php?action=Ignore&amp;Ignore=1&amp;showid=1123" style="font-size: xx-small;">Ignore</a> - <a shape="rect" href="myshows.php?action=Split&amp;Split=1&amp;showid=1123" style="font-size: xx-small;">Disallow Split</a> <a shape="rect" href="forum/viewtopic.php?t=66">[?]</a><br clear="none"></br>
+    </td></tr><tr align="center" style="background-color: "><td colspan="1" rowspan="1">
+        <a shape="rect" href="myshows.php?action=expand&amp;showid=334&amp;status=1"><img border="0" src="img/icon_plus.gif" style="cursor: pointer;"></img></a>
+    </td><td colspan="1" rowspan="1">
+        <a shape="rect" class="shows" href="http://www.tvrage.com/How_I_Met_Your_Mother" target="_blank">How I Met Your Mother</a>
+    </td><td colspan="1" rowspan="1">
+        <b>
+            S06E05 </b>
+    </td><td colspan="1" rowspan="1">
+        <img src="img/icon_watch.gif"></img></td><td colspan="1" rowspan="1">
+        <b>S06E06 - 25-Oct-2010</b><br clear="none"></br><a shape="rect" href="http://www.tvrage.com/How_I_Met_Your_Mother/episodes/1064984708/06x06" target="_blank"> Baby Talk</a>
+    </td><td colspan="1" rowspan="1">
+        <a shape="rect" href="myshows.php?action=Update&amp;showid=334&amp;season=6&amp;episode=6&amp;seen=1" style="font-size: xx-small;">SEEN</a><br clear="none"></br> <a shape="rect" href="JavaScript:GotoConfirm('Are you sure you want to delete: How I Met Your Mother?\n\nAll your episode-records for this show will be lost.','myshows.php?action=Remove&amp;showid=334')" style="font-size: xx-small;">REMOVE</a><br clear="none"></br>
+        <a shape="rect" href="myshows.php?action=Ignore&amp;Ignore=1&amp;showid=334" style="font-size: xx-small;">Ignore</a> - <a shape="rect" href="myshows.php?action=Split&amp;Split=1&amp;showid=334" style="font-size: xx-small;">Disallow Split</a> <a shape="rect" href="forum/viewtopic.php?t=66">[?]</a><br clear="none"></br>
+    </td></tr><tr align="center" style="background-color: "><td colspan="1" rowspan="1">
+        <a shape="rect" href="myshows.php?action=expand&amp;showid=6657&amp;status=1"><img border="0" src="img/icon_plus.gif" style="cursor: pointer;"></img></a>
+    </td><td colspan="1" rowspan="1">
+        <a shape="rect" class="shows" href="http://www.tvrage.com/shows/id-25703" target="_blank">The Event</a>
+    </td><td colspan="1" rowspan="1">
+        <b>
+            S01E05 </b>
+    </td><td colspan="1" rowspan="1">
+        <img src="img/icon_watch.gif"></img></td><td colspan="1" rowspan="1">
+        <b>S01E06 - 25-Oct-2010</b><br clear="none"></br><a shape="rect" href="http://www.tvrage.com/The_Event/episodes/1064984424/01x06" target="_blank"> Loyalty</a>
+    </td><td colspan="1" rowspan="1">
+        <a shape="rect" href="myshows.php?action=Update&amp;showid=6657&amp;season=1&amp;episode=6&amp;seen=1" style="font-size: xx-small;">SEEN</a><br clear="none"></br> <a shape="rect" href="JavaScript:GotoConfirm('Are you sure you want to delete: The Event?\n\nAll your episode-records for this show will be lost.','myshows.php?action=Remove&amp;showid=6657')" style="font-size: xx-small;">REMOVE</a><br clear="none"></br>
+        <a shape="rect" href="myshows.php?action=Ignore&amp;Ignore=1&amp;showid=6657" style="font-size: xx-small;">Ignore</a> - <a shape="rect" href="myshows.php?action=Split&amp;Split=1&amp;showid=6657" style="font-size: xx-small;">Disallow Split</a> <a shape="rect" href="forum/viewtopic.php?t=66">[?]</a><br clear="none"></br>
+    </td></tr><tr align="center" style="background-color: "><td colspan="1" rowspan="1">
+        <a shape="rect" href="myshows.php?action=expand&amp;showid=4687&amp;status=1"><img border="0" src="img/icon_plus.gif" style="cursor: pointer;"></img></a>
+    </td><td colspan="1" rowspan="1">
+        <a shape="rect" class="shows" href="http://www.tvrage.com/shows/id-21704" target="_blank">Glee</a>
+    </td><td colspan="1" rowspan="1">
+        <b>
+            S02E04 </b>
+    </td><td colspan="1" rowspan="1">
+        <img src="img/icon_watch.gif"></img></td><td colspan="1" rowspan="1">
+        <b>S02E05 - 26-Oct-2010</b><br clear="none"></br><a shape="rect" href="http://www.tvrage.com/Glee/episodes/1064972545/02x05" target="_blank">
+        The Rocky Horror Glee Show</a>
+    </td><td colspan="1" rowspan="1">
+        <a shape="rect" href="myshows.php?action=Update&amp;showid=4687&amp;season=2&amp;episode=5&amp;seen=1" style="font-size: xx-small;">SEEN</a><br clear="none"></br> <a shape="rect" href="JavaScript:GotoConfirm('Are you sure you want to delete: Glee?\n\nAll your episode-records for this show will be lost.','myshows.php?action=Remove&amp;showid=4687')" style="font-size: xx-small;">REMOVE</a><br clear="none"></br>
+        <a shape="rect" href="myshows.php?action=Ignore&amp;Ignore=1&amp;showid=4687" style="font-size: xx-small;">Ignore</a> - <a shape="rect" href="myshows.php?action=Split&amp;Split=1&amp;showid=4687" style="font-size: xx-small;">Disallow Split</a> <a shape="rect" href="forum/viewtopic.php?t=66">[?]</a><br clear="none"></br>
+    </td></tr><tr align="center" style="background-color: "><td colspan="1" rowspan="1">
+        <a shape="rect" href="myshows.php?action=expand&amp;showid=6141&amp;status=2"><img border="0" src="img/icon_plus.gif" style="cursor: pointer;"></img></a>
+    </td><td colspan="1" rowspan="1">
+        <a shape="rect" class="shows" href="http://www.tvrage.com/shows/id-25056" target="_blank">The Walking Dead</a>
+    </td><td colspan="1" rowspan="1">
+        <b>
+            - </b>
+    </td><td colspan="1" rowspan="1">
+        <img src="img/icon_coming.gif"></img></td><td colspan="1" rowspan="1">
+        <b>S01E01 - 31-Oct-2010</b><br clear="none"></br><a shape="rect" href="http://www.tvrage.com/The_Walking_Dead/episodes/1064920135/01x01" target="_blank"> Days Gone Bye</a>
+    </td><td colspan="1" rowspan="1">
+        <a shape="rect" href="JavaScript:GotoConfirm('Are you sure you want to delete: The Walking Dead?\n\nAll your episode-records for this show will be lost.','myshows.php?action=Remove&amp;showid=6141')" style="font-size: xx-small;">REMOVE</a><br clear="none"></br>
+        <a shape="rect" href="myshows.php?action=Ignore&amp;Ignore=1&amp;showid=6141" style="font-size: xx-small;">Ignore</a> - <a shape="rect" href="myshows.php?action=Split&amp;Split=1&amp;showid=6141" style="font-size: xx-small;">Disallow Split</a> <a shape="rect" href="forum/viewtopic.php?t=66">[?]</a><br clear="none"></br>
+    </td></tr><tr align="center" style="background-color: "><td colspan="1" rowspan="1">
+        <a shape="rect" href="myshows.php?action=expand&amp;showid=3199&amp;status=2"><img border="0" src="img/icon_plus.gif" style="cursor: pointer;"></img></a>
+    </td><td colspan="1" rowspan="1">
+        <a shape="rect" class="shows" href="http://www.tvrage.com/shows/id-18388" target="_blank">Fringe</a>
+    </td><td colspan="1" rowspan="1">
+        <b>
+            S03E04 </b>
+    </td><td colspan="1" rowspan="1">
+        <img src="img/icon_coming.gif"></img></td><td colspan="1" rowspan="1">
+        <b>S03E05 - 04-Nov-2010</b><br clear="none"></br><a shape="rect" href="http://www.tvrage.com/Fringe/episodes/1064985286/03x05" target="_blank">
+        Amber 31422</a>
+    </td><td colspan="1" rowspan="1">
+        <a shape="rect" href="JavaScript:GotoConfirm('Are you sure you want to delete: Fringe?\n\nAll your episode-records for this show will be lost.','myshows.php?action=Remove&amp;showid=3199')" style="font-size: xx-small;">REMOVE</a><br clear="none"></br>
+        <a shape="rect" href="myshows.php?action=Ignore&amp;Ignore=1&amp;showid=3199" style="font-size: xx-small;">Ignore</a> - <a shape="rect" href="myshows.php?action=Split&amp;Split=1&amp;showid=3199" style="font-size: xx-small;">Disallow Split</a> <a shape="rect" href="forum/viewtopic.php?t=66">[?]</a><br clear="none"></br>
+    </td></tr><tr align="center" style="background-color: "><td colspan="1" rowspan="1">
+        <a shape="rect" href="myshows.php?action=expand&amp;showid=57&amp;status=2"><img border="0" src="img/icon_plus.gif" style="cursor: pointer;"></img></a>
+    </td><td colspan="1" rowspan="1">
+        <a shape="rect" class="shows" href="http://www.tvrage.com/House" target="_blank">House</a>
+    </td><td colspan="1" rowspan="1">
+        <b>
+            S07E05 </b>
+    </td><td colspan="1" rowspan="1">
+        <img src="img/icon_coming.gif"></img></td><td colspan="1" rowspan="1">
+        <b>S07E06 - 08-Nov-2010</b><br clear="none"></br><a shape="rect" href="http://www.tvrage.com/House/episodes/1064984425/07x06" target="_blank">
+        Office Politics</a>
+    </td><td colspan="1" rowspan="1">
+        <a shape="rect" href="JavaScript:GotoConfirm('Are you sure you want to delete: House?\n\nAll your episode-records for this show will be lost.','myshows.php?action=Remove&amp;showid=57')" style="font-size: xx-small;">REMOVE</a><br clear="none"></br>
+        <a shape="rect" href="myshows.php?action=Ignore&amp;Ignore=1&amp;showid=57" style="font-size: xx-small;">Ignore</a> - <a shape="rect" href="myshows.php?action=Split&amp;Split=1&amp;showid=57" style="font-size: xx-small;">Disallow Split</a> <a shape="rect" href="forum/viewtopic.php?t=66">[?]</a><br clear="none"></br>
+    </td></tr><tr align="center" style="background-color: "><td colspan="1" rowspan="1">
+        <a shape="rect" href="myshows.php?action=expand&amp;showid=5233&amp;status=2"><img border="0" src="img/icon_plus.gif" style="cursor: pointer;"></img></a>
+    </td><td colspan="1" rowspan="1">
+        <a shape="rect" class="shows" href="http://www.tvrage.com/shows/id-22814" target="_blank">V (2009)</a>
+    </td><td colspan="1" rowspan="1">
+        <b>
+            S01E12 </b>
+    </td><td colspan="1" rowspan="1">
+        <img src="img/icon_coming.gif"></img></td><td colspan="1" rowspan="1">
+        <b>S02E01 - 04-Jan-2011</b><br clear="none"></br><a shape="rect" href="http://www.tvrage.com/V_2009/episodes/1064980651/02x01" target="_blank">
+        TBA</a>
+    </td><td colspan="1" rowspan="1">
+        <a shape="rect" href="JavaScript:GotoConfirm('Are you sure you want to delete: V (2009)?\n\nAll your episode-records for this show will be lost.','myshows.php?action=Remove&amp;showid=5233')" style="font-size: xx-small;">REMOVE</a><br clear="none"></br>
+        <a shape="rect" href="myshows.php?action=Ignore&amp;Ignore=1&amp;showid=5233" style="font-size: xx-small;">Ignore</a> - <a shape="rect" href="myshows.php?action=Split&amp;Split=1&amp;showid=5233" style="font-size: xx-small;">Disallow Split</a> <a shape="rect" href="forum/viewtopic.php?t=66">[?]</a><br clear="none"></br>
+    </td></tr><tr align="center" style="background-color: "><td colspan="1" rowspan="1">
+        <a shape="rect" href="myshows.php?action=expand&amp;showid=3&amp;status=3"><img border="0" src="img/icon_plus.gif" style="cursor: pointer;"></img></a>
+    </td><td colspan="1" rowspan="1">
+        <a shape="rect" class="shows" href="http://www.tvrage.com/24" target="_blank">24</a>
+    </td><td colspan="1" rowspan="1">
+        <b>
+            S05E07 </b>
+    </td><td colspan="1" rowspan="1">
+        <img src="img/icon_unknown.gif"></img></td><td colspan="1" rowspan="1">
+        <b>S05E07 - no date</b><br clear="none"></br><a shape="rect" href="http://www.tvrage.com/24" target="_blank"> 24 -- Guide</a>
+    </td><td colspan="1" rowspan="1">
+        <a shape="rect" href="JavaScript:GotoConfirm('Are you sure you want to delete: 24?\n\nAll your episode-records for this show will be lost.','myshows.php?action=Remove&amp;showid=3')" style="font-size: xx-small;">REMOVE</a><br clear="none"></br>
+        <a shape="rect" href="myshows.php?action=Ignore&amp;Ignore=1&amp;showid=3" style="font-size: xx-small;">Ignore</a> - <a shape="rect" href="myshows.php?action=Split&amp;Split=1&amp;showid=3" style="font-size: xx-small;">Disallow Split</a> <a shape="rect" href="forum/viewtopic.php?t=66">[?]</a><br clear="none"></br>
+    </td></tr><tr align="center" style="background-color: "><td colspan="1" rowspan="1">
+        <a shape="rect" href="myshows.php?action=expand&amp;showid=3213&amp;status=3"><img border="0" src="img/icon_plus.gif" style="cursor: pointer;"></img></a>
+    </td><td colspan="1" rowspan="1">
+        <a shape="rect" class="shows" href="http://www.tvrage.com/shows/id-18434" target="_blank">Being Human (UK)</a>
+    </td><td colspan="1" rowspan="1">
+        <b>
+            S01E06 </b>
+    </td><td colspan="1" rowspan="1">
+        <img src="img/icon_unknown.gif"></img></td><td colspan="1" rowspan="1">
+        <b>S01E06 - no date</b><br clear="none"></br><a shape="rect" href="http://www.tvrage.com/shows/id-18434" target="_blank"> Being Human (UK) --
+        Guide</a>
+    </td><td colspan="1" rowspan="1">
+        <a shape="rect" href="JavaScript:GotoConfirm('Are you sure you want to delete: Being Human (UK)?\n\nAll your episode-records for this show will be lost.','myshows.php?action=Remove&amp;showid=3213')" style="font-size: xx-small;">REMOVE</a><br clear="none"></br>
+        <a shape="rect" href="myshows.php?action=Ignore&amp;Ignore=1&amp;showid=3213" style="font-size: xx-small;">Ignore</a> - <a shape="rect" href="myshows.php?action=Split&amp;Split=1&amp;showid=3213" style="font-size: xx-small;">Disallow Split</a> <a shape="rect" href="forum/viewtopic.php?t=66">[?]</a><br clear="none"></br>
+    </td></tr><tr align="center" style="background-color: "><td colspan="1" rowspan="1">
+        <a shape="rect" href="myshows.php?action=expand&amp;showid=985&amp;status=3"><img border="0" src="img/icon_plus.gif" style="cursor: pointer;"></img></a>
+    </td><td colspan="1" rowspan="1">
+        <a shape="rect" class="shows" href="http://www.tvrage.com/shows/id-11011" target="_blank">Caprica</a>
+    </td><td colspan="1" rowspan="1">
+        <b>
+            S01E09 </b>
+    </td><td colspan="1" rowspan="1">
+        <img src="img/icon_unknown.gif"></img></td><td colspan="1" rowspan="1">
+        <b>S01E09 - no date</b><br clear="none"></br><a shape="rect" href="http://www.tvrage.com/shows/id-11011" target="_blank"> Caprica -- Guide</a>
+    </td><td colspan="1" rowspan="1">
+        <a shape="rect" href="JavaScript:GotoConfirm('Are you sure you want to delete: Caprica?\n\nAll your episode-records for this show will be lost.','myshows.php?action=Remove&amp;showid=985')" style="font-size: xx-small;">REMOVE</a><br clear="none"></br>
+        <a shape="rect" href="myshows.php?action=Ignore&amp;Ignore=1&amp;showid=985" style="font-size: xx-small;">Ignore</a> - <a shape="rect" href="myshows.php?action=Split&amp;Split=1&amp;showid=985" style="font-size: xx-small;">Disallow Split</a> <a shape="rect" href="forum/viewtopic.php?t=66">[?]</a><br clear="none"></br>
+    </td></tr><tr align="center" style="background-color: "><td colspan="1" rowspan="1">
+        <a shape="rect" href="myshows.php?action=expand&amp;showid=819&amp;status=3"><img border="0" src="img/icon_plus.gif" style="cursor: pointer;"></img></a>
+    </td><td colspan="1" rowspan="1">
+        <a shape="rect" class="shows" href="http://www.tvrage.com/The_IT_Crowd" target="_blank">The IT Crowd</a>
+    </td><td colspan="1" rowspan="1">
+        <b>
+            S04E06 </b>
+    </td><td colspan="1" rowspan="1">
+        <img src="img/icon_unknown.gif"></img></td><td colspan="1" rowspan="1">
+        <b>S04E06 - no date</b><br clear="none"></br><a shape="rect" href="http://www.tvrage.com/The_IT_Crowd" target="_blank"> The IT Crowd --
+        Guide</a>
+    </td><td colspan="1" rowspan="1">
+        <a shape="rect" href="JavaScript:GotoConfirm('Are you sure you want to delete: The IT Crowd?\n\nAll your episode-records for this show will be lost.','myshows.php?action=Remove&amp;showid=819')" style="font-size: xx-small;">REMOVE</a><br clear="none"></br>
+        <a shape="rect" href="myshows.php?action=Ignore&amp;Ignore=1&amp;showid=819" style="font-size: xx-small;">Ignore</a> - <a shape="rect" href="myshows.php?action=Split&amp;Split=1&amp;showid=819" style="font-size: xx-small;">Disallow Split</a> <a shape="rect" href="forum/viewtopic.php?t=66">[?]</a><br clear="none"></br>
+    </td></tr><tr align="center" style="background-color: "><td colspan="1" rowspan="1">
+        <a shape="rect" href="myshows.php?action=expand&amp;showid=1635&amp;status=3"><img border="0" src="img/icon_plus.gif" style="cursor: pointer;"></img></a>
+    </td><td colspan="1" rowspan="1">
+        <a shape="rect" class="shows" href="http://www.tvrage.com/shows/id-12662" target="_blank">True Blood</a>
+    </td><td colspan="1" rowspan="1">
+        <b>
+            S03E12 </b>
+    </td><td colspan="1" rowspan="1">
+        <img src="img/icon_unknown.gif"></img></td><td colspan="1" rowspan="1">
+        <b>S03E12 - no date</b><br clear="none"></br><a shape="rect" href="http://www.tvrage.com/shows/id-12662" target="_blank"> True Blood --
+        Guide</a>
+    </td><td colspan="1" rowspan="1">
+        <a shape="rect" href="JavaScript:GotoConfirm('Are you sure you want to delete: True Blood?\n\nAll your episode-records for this show will be lost.','myshows.php?action=Remove&amp;showid=1635')" style="font-size: xx-small;">REMOVE</a><br clear="none"></br>
+        <a shape="rect" href="myshows.php?action=Ignore&amp;Ignore=1&amp;showid=1635" style="font-size: xx-small;">Ignore</a> - <a shape="rect" href="myshows.php?action=Split&amp;Split=1&amp;showid=1635" style="font-size: xx-small;">Disallow Split</a> <a shape="rect" href="forum/viewtopic.php?t=66">[?]</a><br clear="none"></br>
+    </td></tr><tr align="center" style="background-color: "><td colspan="1" rowspan="1">
+        <a shape="rect" href="myshows.php?action=expand&amp;showid=6018&amp;status=3"><img border="0" src="img/icon_plus.gif" style="cursor: pointer;"></img></a>
+    </td><td colspan="1" rowspan="1">
+        <a shape="rect" class="shows" href="http://www.tvrage.com/shows/id-24787" target="_blank">The Pillars Of The Earth</a>
+    </td><td colspan="1" rowspan="1">
+        <b>
+            - </b>
+    </td><td colspan="1" rowspan="1">
+        <img src="img/icon_unknown.gif"></img></td><td colspan="1" rowspan="1">
+        <b>S00E00 - no date</b><br clear="none"></br><a shape="rect" href="http://www.tvrage.com/shows/id-24787" target="_blank"> The Pillars Of The
+        Earth -- Guide</a>
+    </td><td colspan="1" rowspan="1">
+        <a shape="rect" href="JavaScript:GotoConfirm('Are you sure you want to delete: The Pillars Of The Earth?\n\nAll your episode-records for this show will be lost.','myshows.php?action=Remove&amp;showid=6018')" style="font-size: xx-small;">REMOVE</a><br clear="none"></br>
+        <a shape="rect" href="myshows.php?action=Ignore&amp;Ignore=1&amp;showid=6018" style="font-size: xx-small;">Ignore</a> - <a shape="rect" href="myshows.php?action=Split&amp;Split=1&amp;showid=6018" style="font-size: xx-small;">Disallow Split</a> <a shape="rect" href="forum/viewtopic.php?t=66">[?]</a><br clear="none"></br>
+    </td></tr><tr align="center" style="background-color: "><td colspan="1" rowspan="1">
+        <a shape="rect" href="myshows.php?action=expand&amp;showid=6042&amp;status=3"><img border="0" src="img/icon_plus.gif" style="cursor: pointer;"></img></a>
+    </td><td colspan="1" rowspan="1">
+        <a shape="rect" class="shows" href="http://www.tvrage.com/shows/id-24837" target="_blank">Undercovers</a>
+    </td><td colspan="1" rowspan="1">
+        <b>
+            - </b>
+    </td><td colspan="1" rowspan="1">
+        <img src="img/icon_unknown.gif"></img></td><td colspan="1" rowspan="1">
+        <b>S00E00 - no date</b><br clear="none"></br><a shape="rect" href="http://www.tvrage.com/shows/id-24837" target="_blank"> Undercovers --
+        Guide</a>
+    </td><td colspan="1" rowspan="1">
+        <a shape="rect" href="JavaScript:GotoConfirm('Are you sure you want to delete: Undercovers?\n\nAll your episode-records for this show will be lost.','myshows.php?action=Remove&amp;showid=6042')" style="font-size: xx-small;">REMOVE</a><br clear="none"></br>
+        <a shape="rect" href="myshows.php?action=Ignore&amp;Ignore=1&amp;showid=6042" style="font-size: xx-small;">Ignore</a> - <a shape="rect" href="myshows.php?action=Split&amp;Split=1&amp;showid=6042" style="font-size: xx-small;">Disallow Split</a> <a shape="rect" href="forum/viewtopic.php?t=66">[?]</a><br clear="none"></br>
+    </td></tr><tr align="center" style="background-color: "><td colspan="1" rowspan="1">
+        <a shape="rect" href="myshows.php?action=expand&amp;showid=3731&amp;status=3"><img border="0" src="img/icon_plus.gif" style="cursor: pointer;"></img></a>
+    </td><td colspan="1" rowspan="1">
+        <a shape="rect" class="shows" href="http://www.tvrage.com/shows/id-18175" target="_blank">Wallander</a>
+    </td><td colspan="1" rowspan="1">
+        <b>
+            - </b>
+    </td><td colspan="1" rowspan="1">
+        <img src="img/icon_unknown.gif"></img></td><td colspan="1" rowspan="1">
+        <b>S00E00 - no date</b><br clear="none"></br><a shape="rect" href="http://www.tvrage.com/shows/id-18175" target="_blank"> Wallander --
+        Guide</a>
+    </td><td colspan="1" rowspan="1">
+        <a shape="rect" href="JavaScript:GotoConfirm('Are you sure you want to delete: Wallander?\n\nAll your episode-records for this show will be lost.','myshows.php?action=Remove&amp;showid=3731')" style="font-size: xx-small;">REMOVE</a><br clear="none"></br>
+        <a shape="rect" href="myshows.php?action=Ignore&amp;Ignore=1&amp;showid=3731" style="font-size: xx-small;">Ignore</a> - <a shape="rect" href="myshows.php?action=Split&amp;Split=1&amp;showid=3731" style="font-size: xx-small;">Disallow Split</a> <a shape="rect" href="forum/viewtopic.php?t=66">[?]</a><br clear="none"></br>
+    </td></tr></table>
+<br clear="none"></br>
+<br clear="none"></br>
+
+<div align="center" style="font-size: xx-small; font-family: Verdana,Arial,Helvetica,Geneva,Swiss,Sans-Serif; clear: both;">
+    &#169; 2000-2006 <a shape="rect" href="mailto:contact@myepisodes.com">MyEpisodes</a>. All rights reserved. Design &#169; <a shape="rect" href="mailto:xxmwxx@spymac.com"><u>MW</u></a>.<br clear="none"></br>
+
+    Page loaded in 0.403950 seconds
+</div>
+</div>
+</td><td colspan="1" rowspan="1" width="50%">
+</td></tr></table>
+
+<script type="text/javascript" language="javascript">
+    var sc_project=1884872;
+    var sc_invisible=1;
+    var sc_partition=17;
+    var sc_security="2efc6f6b";
+</script>
+
+<script type="text/javascript" language="javascript" src="http://www.statcounter.com/counter/counter.js"></script>
+<noscript><a shape="rect" href="http://www.statcounter.com/" target="_blank"><img src="http://c18.statcounter.com/counter.php?sc_project=1884872&amp;java=0&amp;security=2efc6f6b&amp;invisible=1" alt="web log free" border="0"></img></a></noscript>
+
+</body></html>
+

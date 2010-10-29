@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Locals">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/lib" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/tagsoup-1.2/src/templates" />
+      <root url="file://$PROJECT_DIR$/tagsoup-1.2/src/java" />
+    </SOURCES>
+    <jarDirectory url="file://$PROJECT_DIR$/lib" recursive="false" />
+  </library>
+</component>
