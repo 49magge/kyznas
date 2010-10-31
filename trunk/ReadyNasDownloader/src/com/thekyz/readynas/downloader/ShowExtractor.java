@@ -5,12 +5,15 @@ import org.w3c.dom.Node;
 import org.xml.sax.InputSource;
 
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
 import com.thekyz.readynas.downloader.TvShow.ShowStatus;
+import org.xml.sax.SAXException;
 
 /**
  * User: Kyz
@@ -25,29 +28,37 @@ public final class ShowExtractor {
      * @throws Exception If anything bad occurs.
      **/
     public static void main(String[] argv) throws Exception {
+        ShowExtractor extractor = new ShowExtractor("myepisodes.xhtml");
+    }
+
+    private boolean started = false;
+
+    private Map<ShowStatus, List<TvShow>> shows = new HashMap<ShowStatus, List<TvShow>>();
+
+    private TvShow tempShow;
+    private String[] showInfo = new String[5];
+    private int counter = 0;
+    private ShowStatus tempStatus = ShowStatus.PENDING;
+
+    public ShowExtractor(String inputFile) throws IOException, SAXException {
         DOMParser parser = new DOMParser();
 
-        FileInputStream fis = new FileInputStream("myepisodes.xhtml");
+        FileInputStream fis = new FileInputStream(inputFile);
         InputSource i = new InputSource(fis);
 
         parser.parse(i);
         parse(parser.getDocument());
     }
 
-    private static boolean started = false;
-
-    private static Map<ShowStatus, List<TvShow>> shows = new HashMap<ShowStatus, List<TvShow>>();
-
-    private static TvShow tempShow;
-    private static String[] showInfo = new String[5];
-    private static int counter = 0;
-    private static ShowStatus tempStatus = ShowStatus.PENDING;
+    public Map<ShowStatus, List<TvShow>> getShows() {
+        return shows;
+    }
 
     /**
      * Prints a node's class name.
      * @param node The node to parse
      **/
-    public static void parse(Node node) {
+    public void parse(Node node) {
         String value = node.getNodeValue();
 
         // Encapsulate the show declaration part
