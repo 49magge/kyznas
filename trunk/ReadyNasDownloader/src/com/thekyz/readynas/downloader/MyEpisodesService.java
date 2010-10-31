@@ -1,13 +1,12 @@
 package com.thekyz.readynas.downloader;
 
-import com.thekyz.utils.Html;
+import com.thekyz.utils.HtmlHelper;
 import com.thekyz.utils.WrongCredentialException;
 import org.apache.http.NameValuePair;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.message.BasicNameValuePair;
 
 import java.io.BufferedWriter;
-import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -44,7 +43,7 @@ public class MyEpisodesService {
         pairs.add(new BasicNameValuePair("action", "Login"));
 
         // Send request
-        String responsePage = Html.post("http://www.myepisodes.com/login.php", pairs);
+        String responsePage = HtmlHelper.post("http://www.myepisodes.com/login.php", pairs);
 
         if (responsePage.contains("Wrong username/password")) {
             throw new WrongCredentialException();
@@ -52,6 +51,6 @@ public class MyEpisodesService {
     }
 
     public static String readShowPage() {
-        return Html.get("http://www.myepisodes.com/myshows.php");
+        return HtmlHelper.get("http://www.myepisodes.com/myshows.php");
     }
 }
