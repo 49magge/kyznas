@@ -122,8 +122,6 @@ public class TvShow {
         m = Pattern.compile("[0-9]+[-][a-wA-W]+[-][0-9]+").matcher(showInfo[NEW_EPISODE]);
         m.find();
         newEpisode.setAirDate(m.group(0));
-
-        System.out.println("\t" + this);
     }
 
     public void setId(int id) {
