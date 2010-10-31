@@ -2,6 +2,7 @@
   <library name="Locals">
     <CLASSES>
       <root url="file://$PROJECT_DIR$/httpcomponents-client-4.0.3/lib" />
+      <root url="jar://$PROJECT_DIR$/tagsoup-1.2.jar!/" />
     </CLASSES>
     <JAVADOC>
       <root url="file://$PROJECT_DIR$/httpcomponents-client-4.0.3/javadoc" />
