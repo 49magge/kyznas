@@ -78,6 +78,10 @@ public class MyEpisodeEntry {
         newEpisode.setAirDate(m.group(0));
     }
 
+    public Episode getNewEpisode() {
+        return newEpisode;
+    }
+
     public void setId(int id) {
         this.id = id;
     }

@@ -33,7 +33,7 @@ public class RssService {
         "\\.torrent";
 
     private static final String EZTV_REGEX =
-        "([\\w\\s]+)[\\s]" +
+        "([\\w\\s]+)[\\s](?:[\\-][\\w\\s]+)?" +
         "(?:(?:[S]([0-9]+)[E]([0-9]+))" +
                 "|(?:([0-9]+)of[0-9]+)" +
                 "|(?:([0-9]{4})[\\s]([0-9]+[\\s][0-9]+))" +
@@ -78,11 +78,11 @@ public class RssService {
         for (Episode episode : rss.getEpisodes()) {
             System.out.println("\t" + episode.getShowName() + " : " + episode);
         }
-        System.out.println("BTCHAT Feed -------------------");
-        rss = new RssService(RssFeed.BTCHAT);
-        for (Episode episode : rss.getEpisodes()) {
-            System.out.println("\t" + episode.getShowName() + " : " + episode);
-        }
+       // System.out.println("BTCHAT Feed -------------------");
+       // rss = new RssService(RssFeed.BTCHAT);
+       // for (Episode episode : rss.getEpisodes()) {
+       //     System.out.println("\t" + episode.getShowName() + " : " + episode);
+       // }
     }
 
     private RssFeed rssFeed;
@@ -174,5 +174,18 @@ public class RssService {
         } else {
             episode.setName(nodeValue.replace(".torrent", "").trim());
         }
+    }
+
+    public List<Episode> getLdEpisodes() {
+        List<Episode> ldList = new ArrayList<Episode>();
+
+        for (Episode episode : episodes) {
+            if (!episode.getName().contains("h264") && !episode.getName().contains("720P")
+                     && !episode.getName().contains("1080P")) {
+                ldList.add(episode);
+            }
+        }
+
+        return ldList;
     }
 }
