@@ -37,7 +37,7 @@ public class MyEpisodesService {
         HttpPost post = new HttpPost("http://www.myepisodes.com/login.php");
 
         // Build the data
-        List<NameValuePair> pairs = new ArrayList<NameValuePair>(2);
+        List<NameValuePair> pairs = new ArrayList<NameValuePair>();
         pairs.add(new BasicNameValuePair("username", userName));
         pairs.add(new BasicNameValuePair("password", password));
         pairs.add(new BasicNameValuePair("action", "Login"));
