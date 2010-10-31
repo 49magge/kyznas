@@ -25,19 +25,24 @@ public final class TagSoupHelper {
         cleanUp("myshows.html");
     }
 
-    public static void cleanUp(String htmlFile) throws IOException, SAXException {
+    public static void cleanUp(String httpFile) throws IOException, SAXException {
         String dstFile;
 
         // If the file does not have any extension, just add the new one
-        if (htmlFile.lastIndexOf('.') == -1) {
-            dstFile = htmlFile + ".xhtml";
+        if (httpFile.lastIndexOf('.') == -1) {
+            dstFile = httpFile + ".xhtml";
         // Otherwise change the extension
         } else {
-            dstFile = htmlFile.substring(0, htmlFile.lastIndexOf('.')) + ".xhtml";
+            dstFile = httpFile.substring(0, httpFile.lastIndexOf('.')) + ".xhtml";
         }
 
+        // Clean up the file
+        cleanUp(dstFile, new FileInputStream(httpFile));
+    }
+
+    public static void cleanUp(String outFileName, InputStream is) throws IOException, SAXException {
         // Open a stream to the newly formatted file
-        OutputStream os = new FileOutputStream(dstFile);
+        OutputStream os = new FileOutputStream(outFileName);
         // Create a parser
         XMLReader r = new Parser();
         r.setProperty(Parser.schemaProperty, new HTMLSchema());
@@ -48,7 +53,7 @@ public final class TagSoupHelper {
         r.setContentHandler(h);
         // Configure the input source
         InputSource s = new InputSource();
-        s.setSystemId(htmlFile);
+        s.setByteStream(is);
         // Parse the original file
         r.parse(s);
     }
