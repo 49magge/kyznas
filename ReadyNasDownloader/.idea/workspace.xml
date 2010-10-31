@@ -2,13 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" readonly="true" id="a24e0a08-5172-4dcb-89bb-d31fe20cd304" name="Default" comment="Updated idea project">
-      <change type="MOVED" beforePath="C:\Projects\ReadyNasDownloader\src\com\thekyz\utils\Html.java" afterPath="$PROJECT_DIR$/src/com/thekyz/utils/HtmlHelper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/thekyz/utils/TagSoupHelper.java" afterPath="$PROJECT_DIR$/src/com/thekyz/utils/TagSoupHelper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/thekyz/readynas/downloader/MyEpisodesService.java" afterPath="$PROJECT_DIR$/src/com/thekyz/readynas/downloader/MyEpisodesService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/thekyz/readynas/downloader/Downloader.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/thekyz/readynas/downloader/Episode.java" />
+      <change type="MOVED" beforePath="C:\Projects\ReadyNasDownloader\src\com\thekyz\readynas\downloader\TvShow.java" afterPath="$PROJECT_DIR$/src/com/thekyz/readynas/downloader/MyEpisodeEntry.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dictionaries/Kyz.xml" afterPath="$PROJECT_DIR$/.idea/dictionaries/Kyz.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/thekyz/readynas/downloader/RssService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/thekyz/readynas/downloader/ShowExtractor.java" afterPath="$PROJECT_DIR$/src/com/thekyz/readynas/downloader/ShowExtractor.java" />
     </list>
-    <ignored path="ReadyNasDownloader.iws" />
     <ignored path=".idea/workspace.xml" />
+    <ignored path="ReadyNasDownloader.iws" />
     <ignored path="myshows.xhtml" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,6 +20,11 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="ClassPatternConfiguration">
+    <testPatterns>
+      <classPattern testedClass="$CLASS$" testClass="test/$CLASS$Test" />
+    </testPatterns>
+  </component>
   <component name="CodeExplorer">
     <option name="filters">
       <list>
@@ -24,6 +32,11 @@
       </list>
     </option>
     <option name="showMethodBody" value="true" />
+  </component>
+  <component name="Commander">
+    <leftPanel />
+    <rightPanel />
+    <splitter proportion="0.5" />
   </component>
   <component name="CommittedChangesCache">
     <option name="refreshEnabled" value="true" />
@@ -80,16 +93,7 @@
       <file leaf-file-name="ShowExtractor.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/thekyz/readynas/downloader/ShowExtractor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="34" selection-start="466" selection-end="874" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HtmlHelper.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/thekyz/utils/HtmlHelper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="31" selection-start="760" selection-end="760" vertical-scroll-proportion="0.0">
+            <state line="62" column="38" selection-start="1716" selection-end="1716" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -98,34 +102,37 @@
       <file leaf-file-name="MyEpisodesService.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/thekyz/readynas/downloader/MyEpisodesService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="46" column="0" selection-start="1508" selection-end="1508" vertical-scroll-proportion="0.0">
+            <state line="31" column="5" selection-start="867" selection-end="867" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TagSoupHelper.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/thekyz/utils/TagSoupHelper.java">
+      <file leaf-file-name="RssService.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/thekyz/readynas/downloader/RssService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="0" selection-start="1034" selection-end="1034" vertical-scroll-proportion="0.6317757">
+            <state line="83" column="38" selection-start="2559" selection-end="2559" vertical-scroll-proportion="0.57226795">
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="class#RssFeed#0;class#RssService#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MyEpisodeEntry.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/thekyz/readynas/downloader/MyEpisodeEntry.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="44" column="29" selection-start="1129" selection-end="1129" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WrongCredentialException.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/thekyz/utils/WrongCredentialException.java">
+      <file leaf-file-name="Episode.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/thekyz/readynas/downloader/Episode.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="4" selection-start="150" selection-end="150" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TvShow.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/thekyz/readynas/downloader/TvShow.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="31" selection-start="124" selection-end="208" vertical-scroll-proportion="0.0">
+            <state line="7" column="13" selection-start="115" selection-end="115" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -148,15 +155,55 @@
         <option value="$PROJECT_DIR$/myepisodes.html" />
         <option value="$PROJECT_DIR$/src/ShowExtractor.java" />
         <option value="$PROJECT_DIR$/src/TvShow.java" />
-        <option value="$PROJECT_DIR$/src/com/thekyz/readynas/downloader/TvShow.java" />
-        <option value="$PROJECT_DIR$/src/com/thekyz/readynas/downloader/ShowExtractor.java" />
         <option value="$PROJECT_DIR$/src/com/thekyz/utils/html/Post.java" />
         <option value="$PROJECT_DIR$/src/com/thekyz/utils/WrongCredentialException.java" />
         <option value="$PROJECT_DIR$/src/com/thekyz/utils/Html.java" />
-        <option value="$PROJECT_DIR$/src/com/thekyz/readynas/downloader/MyEpisodesService.java" />
         <option value="$PROJECT_DIR$/src/com/thekyz/utils/TagSoupHelper.java" />
+        <option value="$PROJECT_DIR$/src/com/thekyz/readynas/downloader/MyEpisodesService.java" />
+        <option value="$PROJECT_DIR$/src/com/thekyz/readynas/downloader/ShowExtractor.java" />
+        <option value="$PROJECT_DIR$/src/com/thekyz/readynas/downloader/Downloader.java" />
+        <option value="$PROJECT_DIR$/src/com/thekyz/readynas/downloader/TvShow.java" />
+        <option value="$PROJECT_DIR$/src/com/thekyz/readynas/downloader/Episode.java" />
+        <option value="$PROJECT_DIR$/src/com/thekyz/readynas/downloader/MyEpisodeEntry.java" />
+        <option value="$PROJECT_DIR$/src/com/thekyz/readynas/downloader/BtChatService.java" />
+        <option value="$PROJECT_DIR$/src/com/thekyz/readynas/downloader/RssService.java" />
       </list>
     </option>
+  </component>
+  <component name="JUnitClassTemplateConfiguration">
+    <option name="DONT_SHOW_TEMPLATE_DIALOG_IF_ONLY_ONE_TEMPLATE" value="false" />
+    <option name="DONT_SHOW_METHODS_DIALOG_IF_ONLY_ONE_METHOD" value="false" />
+    <option name="LAST_TEMPLATE_NAME" value="Default Test Class.java" />
+    <option name="TEST_TEMPLATES">
+      <value>
+        <list size="1">
+          <item index="0" class="java.lang.String" itemvalue="Default Test Class.java" />
+        </list>
+      </value>
+    </option>
+  </component>
+  <component name="JUnitMethodTemplateConfiguration">
+    <option name="DONT_SHOW_TEMPLATE_DIALOG_IF_ONLY_ONE_TEMPLATE" value="false" />
+    <option name="DONT_SHOW_METHODS_DIALOG_IF_ONLY_ONE_METHOD" value="false" />
+    <option name="LAST_TEMPLATE_NAME" value="Default Test Method.java" />
+    <option name="TEST_TEMPLATES">
+      <value>
+        <list size="2">
+          <item index="0" class="java.lang.String" itemvalue="Default Test Method.java" />
+          <item index="1" class="java.lang.String" itemvalue="Test Method throws Exception.java" />
+        </list>
+      </value>
+    </option>
+  </component>
+  <component name="JUnitTestConfiguration">
+    <option name="IS_AUTO_TEST_CLASS_RENAME_ENABLED" value="true" />
+    <option name="IS_AUTO_TEST_CLASS_MOVE_ENABLED" value="true" />
+    <option name="IS_AUTO_TEST_CLASS_REFACTORING_ENABLED" value="true" />
+    <option name="IS_AUTO_TEST_METHODS_RENAME_ENABLED" value="true" />
+    <option name="IS_UNTESTED_METHOD_ICON_ENABLED" value="true" />
+    <option name="IS_GET_METHOD_ICONS_ENABLED" value="true" />
+    <option name="IS_SET_METHOD_ICONS_ENABLED" value="true" />
+    <option name="IS_UNIT_TEST_ENABLED" value="true" />
   </component>
   <component name="MavenRunner">
     <option name="jreName" value="#JAVA_INTERNAL" />
@@ -196,6 +243,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Favorites" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -260,9 +308,8 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Favorites" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -289,7 +336,7 @@
       <recent name="D:\4HH\ReadyNasDownloader\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.TagSoupHelper">
+  <component name="RunManager" selected="Application.RssService">
     <configuration default="true" type="Remote" factoryName="Remote">
       <option name="USE_SOCKET_TRANSPORT" value="true" />
       <option name="SERVER_MODE" value="false" />
@@ -461,10 +508,50 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <list size="3">
+    <configuration default="false" name="Downloader" type="Application" factoryName="Application">
+      <extension name="snapshooter" />
+      <option name="MAIN_CLASS_NAME" value="com.thekyz.readynas.downloader.Downloader" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" value="" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="ReadyNasDownloader" />
+      <envs />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="RssService" type="Application" factoryName="Application">
+      <extension name="snapshooter" />
+      <option name="MAIN_CLASS_NAME" value="com.thekyz.readynas.downloader.RssService" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" value="" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="ReadyNasDownloader" />
+      <envs />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="51122" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <ConfigurationWrapper RunnerId="Debug" />
+      <method />
+    </configuration>
+    <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Application.ShowExtractor" />
       <item index="1" class="java.lang.String" itemvalue="Application.MyEpisodesService" />
       <item index="2" class="java.lang.String" itemvalue="Application.TagSoupHelper" />
+      <item index="3" class="java.lang.String" itemvalue="Application.Downloader" />
+      <item index="4" class="java.lang.String" itemvalue="Application.BtChatService" />
     </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
@@ -533,22 +620,22 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1272" y="-8" width="1296" height="1040" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3284091" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18977273" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="CheckStyle" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.475" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="-2" y="-2" width="1260" height="608" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="true" weight="0.475" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="2" y="2" width="1261" height="348" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3097561" sideWeight="0.6636364" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27804878" sideWeight="0.80227274" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.37954545" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -571,7 +658,7 @@
     <option name="ENABLE_BACKGROUND_PROCESSES" value="true" />
     <option name="CHANGED_ON_SERVER_INTERVAL" value="60" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added the capability to clean-up an html file from an input stream" />
+    <option name="LAST_COMMIT_MESSAGE" value="Removed sout at end for TvShow constructor" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -589,6 +676,9 @@
     <MESSAGE value="Ignored myshows.html file" />
     <MESSAGE value="Added tagsoup helper class to clean up badly formatted html&#10;Updated idea project" />
     <MESSAGE value="Added the capability to clean-up an html file from an input stream" />
+    <MESSAGE value="Removed useless initializer value for list item" />
+    <MESSAGE value="Refactored the ShowExtractor class to be non-static" />
+    <MESSAGE value="Removed sout at end for TvShow constructor" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -598,31 +688,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://C:/Program Files/Java/jdk1.6.0_21/src.zip!/java/lang/Integer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="448" column="0" selection-start="16318" selection-end="16318" vertical-scroll-proportion="0.33254993" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myepisodes.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="131" column="38" selection-start="4199" selection-end="4210" vertical-scroll-proportion="0.687885" />
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.6.0_21/jre/lib/rt.jar!/sun/net/www/http/HttpClient.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="20" selection-start="161" selection-end="161" vertical-scroll-proportion="0.08153477" />
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/httpcomponents-client-4.0.3/lib/httpclient-4.0.3.jar!/org/apache/http/client/HttpClient.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="24" selection-start="171" selection-end="171" vertical-scroll-proportion="0.08395062" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/httpcomponents-client-4.0.3/javadoc/org/apache/http/client/HttpClient.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="109" column="0" selection-start="4768" selection-end="6410" vertical-scroll-proportion="-1.36" />
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/httpcomponents-client-4.0.3/lib/httpcore-4.0.1.jar!/org/apache/http/params/HttpParams.class">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="24" selection-start="171" selection-end="171" vertical-scroll-proportion="0.08222491" />
@@ -638,53 +703,81 @@
         <state line="5" column="20" selection-start="167" selection-end="167" vertical-scroll-proportion="0.13765182" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/thekyz/readynas/downloader/ShowExtractor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="34" selection-start="466" selection-end="874" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/thekyz/utils/HtmlHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="31" selection-start="760" selection-end="760" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/thekyz/utils/WrongCredentialException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="4" selection-start="150" selection-end="150" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/thekyz/readynas/downloader/TvShow.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="31" selection-start="124" selection-end="208" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/thekyz/readynas/downloader/MyEpisodesService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="0" selection-start="1508" selection-end="1508" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.6.0_21/src.zip!/org/xml/sax/InputSource.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="192" column="16" selection-start="6317" selection-end="6317" vertical-scroll-proportion="0.33271027">
-          <folding />
-        </state>
+        <state line="192" column="16" selection-start="6317" selection-end="6317" vertical-scroll-proportion="0.33271027" />
       </provider>
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.6.0_21/src.zip!/java/io/BufferedOutputStream.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="6" selection-start="563" selection-end="563" vertical-scroll-proportion="-0.14392523">
-          <folding />
-        </state>
+        <state line="20" column="6" selection-start="563" selection-end="563" vertical-scroll-proportion="-0.14392523" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/thekyz/readynas/downloader/Downloader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="45" selection-start="830" selection-end="830" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/thekyz/utils/WrongCredentialException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="4" selection-start="150" selection-end="150" vertical-scroll-proportion="0.28691983" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/thekyz/utils/TagSoupHelper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="0" selection-start="1034" selection-end="1034" vertical-scroll-proportion="0.6317757">
+        <state line="17" column="34" selection-start="393" selection-end="609" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/thekyz/utils/HtmlHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="42" column="29" selection-start="1354" selection-end="1354" vertical-scroll-proportion="0.5435746" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/thekyz/readynas/downloader/Episode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="13" selection-start="115" selection-end="115" vertical-scroll-proportion="0.0">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/thekyz/readynas/downloader/MyEpisodesService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="5" selection-start="867" selection-end="867" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.6.0_21/src.zip!/java/lang/NumberFormatException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="47" column="0" selection-start="1286" selection-end="1286" vertical-scroll-proportion="0.8158845">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.6.0_21/src.zip!/java/lang/Integer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="469" column="0" selection-start="16851" selection-end="16851" vertical-scroll-proportion="0.33333334">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/thekyz/readynas/downloader/MyEpisodeEntry.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="44" column="29" selection-start="1129" selection-end="1129" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/thekyz/readynas/downloader/ShowExtractor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="62" column="38" selection-start="1716" selection-end="1716" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/thekyz/readynas/downloader/RssService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="83" column="38" selection-start="2559" selection-end="2559" vertical-scroll-proportion="0.57226795">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="class#RssFeed#0;class#RssService#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
