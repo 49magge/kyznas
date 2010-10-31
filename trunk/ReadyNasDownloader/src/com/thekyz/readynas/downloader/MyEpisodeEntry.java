@@ -1,5 +1,4 @@
 package com.thekyz.readynas.downloader;
-import java.net.URI;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -7,9 +6,9 @@ import java.util.regex.Pattern;
  * User: Kyz
  * Date: 30 oct. 2010
  * Time: 15:37:35
- * TvShow descriptor.
+ * MyEpisodeEntry descriptor.
  */
-public class TvShow {
+public class MyEpisodeEntry {
     public enum ShowStatus {
         AIRED("Download"),
         DOWNLOADED("Watch"),
@@ -22,57 +21,9 @@ public class TvShow {
             this.info = info;
         }
 
-
         @Override
         public String toString() {
             return info;
-        }
-    }
-
-    public class Episode {
-        private String airDate = "";
-        private String name = "";
-        private int season = 0;
-        private int number = 0;
-
-        public Episode() {
-        }
-
-        public String getAirDate() {
-            return airDate;
-        }
-
-        public void setAirDate(String airDate) {
-            this.airDate = airDate;
-        }
-
-        public String getName() {
-            return name;
-        }
-
-        public int getSeason() {
-            return season;
-        }
-
-        public int getNumber() {
-            return number;
-        }
-
-        public void setName(String name) {
-            this.name = name;
-        }
-
-        public void setSeason(int season) {
-            this.season = season;
-        }
-
-        public void setNumber(int number) {
-            this.number = number;
-        }
-
-        @Override
-        public String toString() {
-            return (name.isEmpty() ? "" : name + " - ") + "S" + season + "E" + number;
         }
     }
 
@@ -88,10 +39,13 @@ public class TvShow {
     private static final int NEW_EPISODE_NAME = 3;
     private static final int REMOVE_LINK = 4;
 
-    public TvShow(String[] showInfo, ShowStatus status) {
+    public MyEpisodeEntry(String[] showInfo, ShowStatus status) {
         // Get show name
         name = showInfo[0];
         this.status = status;
+
+        lastEpisode.setShowName(name);
+        newEpisode.setShowName(name);
 
         // Compile a pattern for season & episode number catching
         Matcher m = Pattern.compile("[0-9]+").matcher("");

@@ -5,21 +5,20 @@ import org.w3c.dom.Node;
 import org.xml.sax.InputSource;
 
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import com.thekyz.readynas.downloader.TvShow.ShowStatus;
+import com.thekyz.readynas.downloader.MyEpisodeEntry.ShowStatus;
 import org.xml.sax.SAXException;
 
 /**
  * User: Kyz
  * Date: 29 oct. 2010
  * Time: 12:40:05
- * TvShow extractor.
+ * MyEpisodeEntry extractor.
  */
 public final class ShowExtractor {
     /**
@@ -33,9 +32,9 @@ public final class ShowExtractor {
 
     private boolean started = false;
 
-    private Map<ShowStatus, List<TvShow>> shows = new HashMap<ShowStatus, List<TvShow>>();
+    private Map<ShowStatus, List<MyEpisodeEntry>> shows = new HashMap<ShowStatus, List<MyEpisodeEntry>>();
 
-    private TvShow tempShow;
+    private MyEpisodeEntry tempShow;
     private String[] showInfo = new String[5];
     private int counter = 0;
     private ShowStatus tempStatus = ShowStatus.PENDING;
@@ -50,7 +49,7 @@ public final class ShowExtractor {
         parse(parser.getDocument());
     }
 
-    public Map<ShowStatus, List<TvShow>> getShows() {
+    public Map<ShowStatus, List<MyEpisodeEntry>> getShows() {
         return shows;
     }
 
@@ -118,11 +117,11 @@ public final class ShowExtractor {
                     if (counter >= 5) {
                         // Allocate a list for empty statuses
                         if (shows.get(tempStatus) == null) {
-                            shows.put(tempStatus, new ArrayList<TvShow>());
+                            shows.put(tempStatus, new ArrayList<MyEpisodeEntry>());
                         }
 
                         // Create the show
-                        shows.get(tempStatus).add(new TvShow(showInfo, tempStatus));
+                        shows.get(tempStatus).add(new MyEpisodeEntry(showInfo, tempStatus));
                         // Reset the counter for the next show
                         counter = 0;
                     }
