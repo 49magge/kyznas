@@ -23,7 +23,7 @@ import java.util.List;
  * Date: 30 oct. 2010
  * Time: 17:38:38
  */
-public final class Html {
+public final class HtmlHelper {
 
     private static HttpClient client = new DefaultHttpClient();
 
