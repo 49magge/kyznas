@@ -1,13 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" readonly="true" id="a24e0a08-5172-4dcb-89bb-d31fe20cd304" name="Default" comment="Updated idea project">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/thekyz/readynas/downloader/Downloader.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/thekyz/utils/HtmlHelper.java" afterPath="$PROJECT_DIR$/src/com/thekyz/utils/HtmlHelper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/thekyz/readynas/downloader/MyEpisodeEntry.java" afterPath="$PROJECT_DIR$/src/com/thekyz/readynas/downloader/MyEpisodeEntry.java" />
+    <list default="true" readonly="true" id="a24e0a08-5172-4dcb-89bb-d31fe20cd304" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dictionaries/Kyz.xml" afterPath="$PROJECT_DIR$/.idea/dictionaries/Kyz.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/thekyz/readynas/downloader/RssService.java" afterPath="$PROJECT_DIR$/src/com/thekyz/readynas/downloader/RssService.java" />
     </list>
     <ignored path=".idea/workspace.xml" />
     <ignored path="ReadyNasDownloader.iws" />
@@ -110,7 +105,7 @@
       <file leaf-file-name="Downloader.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/thekyz/readynas/downloader/Downloader.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="12" selection-start="913" selection-end="913" vertical-scroll-proportion="0.46063456">
+            <state line="32" column="12" selection-start="913" selection-end="913" vertical-scroll-proportion="0.5790251">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -639,20 +634,20 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1272" y="-8" width="1296" height="1040" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18977273" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="CheckStyle" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="true" weight="0.475" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="2" y="2" width="1261" height="348" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.475" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="2" y="2" width="1261" height="348" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25691056" sideWeight="0.6625" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25691056" sideWeight="0.80227274" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.37954545" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -677,7 +672,7 @@
     <option name="ENABLE_BACKGROUND_PROCESSES" value="true" />
     <option name="CHANGED_ON_SERVER_INTERVAL" value="60" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactored TvShow to MyEpisodeEntry&#10;Refactored Episode out of MyEpisodeEntry&#10;Added RssService for rss feed analysis" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Downloader class to handle torrent downloads&#10;Added low definition list to RssService to avoir download of HD files" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -699,6 +694,7 @@
     <MESSAGE value="Refactored the ShowExtractor class to be non-static" />
     <MESSAGE value="Removed sout at end for TvShow constructor" />
     <MESSAGE value="Refactored TvShow to MyEpisodeEntry&#10;Refactored Episode out of MyEpisodeEntry&#10;Added RssService for rss feed analysis" />
+    <MESSAGE value="Added Downloader class to handle torrent downloads&#10;Added low definition list to RssService to avoir download of HD files" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -771,11 +767,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/thekyz/readynas/downloader/MyEpisodesService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="5" selection-start="867" selection-end="867" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/thekyz/readynas/downloader/RssService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="35" column="44" selection-start="1079" selection-end="1079" vertical-scroll-proportion="0.0">
@@ -802,9 +793,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/thekyz/readynas/downloader/MyEpisodesService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="5" selection-start="867" selection-end="867" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/thekyz/readynas/downloader/Downloader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="12" selection-start="913" selection-end="913" vertical-scroll-proportion="0.46063456">
+        <state line="32" column="12" selection-start="913" selection-end="913" vertical-scroll-proportion="0.5790251">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
